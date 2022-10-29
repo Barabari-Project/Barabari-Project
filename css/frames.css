@@ -1,0 +1,99 @@
+.fade-out {
+    --delay: 0s;
+    will-change: opacity;
+    animation: fade .4s ease-in backwards;
+    animation-delay: var(--delay);
+}
+
+.fade {
+    --delay: 0s;
+    will-change: opacity;
+    animation: fade .4s ease-in forwards;
+    animation-delay: var(--delay);
+}
+
+.fade-right {
+    --delay: 0s;
+    will-change: opacity, transform;
+    animation: fade-right .4s ease-in forwards;
+    animation-delay: var(--delay);
+}
+
+.fade-left {
+    --delay: 0s;
+    will-change: opacity, transform;
+    animation: fade-left .4s ease-in forwards;
+    animation-delay: var(--delay);
+}
+
+.fade-down {
+    --delay: 0s;
+    will-change: opacity, transform;
+    animation: fade-down .4s ease-in forwards;
+    animation-delay: var(--delay);
+}
+
+.fade-up {
+    --delay: 0s;
+    will-change: opacity, transform;
+    animation: fade-up .4s ease-in forwards;
+    animation-delay: var(--delay);
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(-10px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(10px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+@keyframes fade-down {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        transform: translateY(10px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
