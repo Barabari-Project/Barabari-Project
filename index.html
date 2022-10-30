@@ -12,27 +12,31 @@
 
 	<style>
 		:root {
-			/* --yellow: #fec431; */
+			--yellow-hl: #fec431;
 			--yellow: #fadf0b;
 			--purple: #9a4cec;
 			--blue: #5345d8;
 			--indigo: #4c2884;
-			--purple-grad: linear-gradient(135deg, var(--blue), var(--purple));
+			--purple-grad: linear-gradient(to right, var(--blue), var(--purple));
 		}
 
-		body {}
+		.slash {
+			--color: var(--purple);
+			--angle: 135deg;
+			background: linear-gradient(var(--angle), #fff 0%, #fff 49.9%, var(--color) 50%, var(--color) 100%);
+		}
 	</style>
 
 	<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_layout-52da87b5.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/_page-131017a4.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/start-6de4f3dd.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-8519edc2.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-5d686c97.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-89cd242f.js">
+		<link href="./_app/immutable/assets/_layout-3ca053ab.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_page-f8590360.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/start-09b2b047.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-73d9e582.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-9992ea5c.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-0fc10cae.js">
 		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-7b9cbfbc.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-8d2a742b.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-2b7a4334.js"><!-- HEAD_svelte-922vfm_START -->
+		<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-d7b99c63.js"><!-- HEAD_svelte-922vfm_START -->
 <title>The Barabari Project | Home</title>
 <meta name="title" content="The Barabari Project | Home">
 <meta name="description" content="We are a non-profit working to provide quality Tech based mentorship to candidates from underprivileged backgrounds. With one-to-one mentorship and curated training modules, we get them ready for jobs in the Tech sector">
@@ -58,27 +62,35 @@
 	
 
 
-<main class="app"><div class="nav blur p-fix svelte-f02x1f" style="--sz: 8px;--bg: #fff8;"><input type="checkbox" id="nav-check" class="svelte-f02x1f">
-    <div class="nav-header svelte-f02x1f"><div class="nav-title svelte-f02x1f">Barabari Project</div></div>
-    <div class="nav-btn p-abs svelte-f02x1f"><label for="nav-check" class="svelte-f02x1f"><span class="svelte-f02x1f"></span>
-            <span class="svelte-f02x1f"></span>
-            <span class="svelte-f02x1f"></span></label></div>
+<main class="app"><nav class="p-fix w-100 o-50 blur svelte-rc9puc"><div class="nav svelte-rc9puc"><input type="checkbox" id="nav-check" class="svelte-rc9puc">
+        <div class="nav-header svelte-rc9puc"><div class="nav-title svelte-rc9puc">The Barabari Project</div></div>
+        <div class="nav-btn p-abs svelte-rc9puc"><label for="nav-check" class="svelte-rc9puc"><span class="svelte-rc9puc"></span>
+                <span class="svelte-rc9puc"></span>
+                <span class="svelte-rc9puc"></span></label></div>
 
-    <div class="nav-links svelte-f02x1f"><a href="" class="svelte-f02x1f">Get Mentorship</a>
-        <a href="" class="svelte-f02x1f">Be a Mentor</a>
-        <a href="" class="svelte-f02x1f">Join Us!</a>
-        <a href="" class="svelte-f02x1f">Meet the Team</a></div></div>
+        <div class="nav-links svelte-rc9puc"><a href="" class="svelte-rc9puc">Get Mentorship</a>
+            <a href="" class="svelte-rc9puc">Be a Mentor</a>
+            <a href="" class="svelte-rc9puc">Join Us!</a>
+            <a href="" class="svelte-rc9puc">Meet the Team</a></div></div></nav>
 
 
     <div id="content" class="svelte-1kfaiiu">
 
 
-<section class="hero w-100 h-100 fade tc p-rel svelte-volfu4" style="background: linear-gradient(NaNdeg, #fff 0%, #fff 49.9%, var(--yellow) 50%, var(--yellow) 100%);"><div id="hi" class="fade-up svelte-volfu4" style="margin-top: 2rem;"><span>Hi!</span></div>
-    <div id="weare" class="fade-up o-0 svelte-volfu4" style="--delay: 2s;"><span>We are</span></div>
-    <img id="logo" class="fade o-0 p-abs svelte-volfu4" src="/icons/barabari.png" alt="logo"></section>
-<section class="fw j-bw svelte-volfu4" style="background: linear-gradient(NaNdeg, #fff 0%, #fff 49.9%, var(--purple) 50%, var(--purple) 100%);"><div id="left-2">LHS</div>
-    <div id="right-2">RHS</div>
-</section></div>
+<section class="hero w-100 h-100 fade tc p-rel slash" style="--color:var(--yellow);--angle:NaNdeg;"><div id="hi" class="fade-up svelte-1oplqal"><span>Hi! <span style="font-size: 0.8em;">👋</span></span></div>
+    <div id="weare" class="fade-up o-0 svelte-1oplqal" style="--delay: 2s;"><span>We are</span></div>
+    <img id="logo" class="fade o-0 p-abs svelte-1oplqal" src="/icons/barabari.png" alt="logo">
+</section>
+<section class="f-col j-bw slash" style="--angle:NaNdeg;"><div id="abt" class="tr svelte-1u2q2i0"><p class="tc">Quality tech-based mentorship via personalised modules to candidates
+            from underrepresented backgrounds 👨🏻‍🏫
+        </p></div>
+    <div class="p20 tl svelte-1u2q2i0" id="join"><div class="tc"><div class="fw3 m10 svelte-1u2q2i0" id="joinus">JOIN US ❤️</div>
+            <div><button class="button m10 secondary lg svelte-1e3c3xj">Volunteer</button>
+                <button class="button m10 primary lg svelte-1e3c3xj">Candidate</button><br>
+                <button class="button m10 action lg svelte-1e3c3xj">Mentor</button></div></div></div>
+</section>
+
+</div>
 
     <footer class="p10 svelte-1kfaiiu" style="background: var(--yellow);"><div class="w-100 tc"><h2>The Barabari Project</h2>
             <h3><i>Universal Access To Quality Jobs</i></h3></div>
@@ -94,8 +106,8 @@
 </main>
 
 
-		<script type="module" data-sveltekit-hydrate="x8bvxd">
-			import { start } from "./_app/immutable/start-6de4f3dd.js";
+		<script type="module" data-sveltekit-hydrate="1mb3u4k">
+			import { start } from "./_app/immutable/start-09b2b047.js";
 
 			start({
 				env: {},
@@ -109,7 +121,7 @@
 					form: null
 				},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="x8bvxd"]').parentNode,
+				target: document.querySelector('[data-sveltekit-hydrate="1mb3u4k"]').parentNode,
 				trailing_slash: "never"
 			});
 		</script>
