@@ -7,6 +7,10 @@ body {
     font-family: -apple-system, BlinkMacSystemfont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
 }
 
+* {
+    box-sizing: border-box;
+}
+
 a,
 a:visited,
 a:hover {
@@ -302,6 +306,10 @@ textarea:focus {
 
 .p-abs {
     position: absolute !important
+}
+
+.p-stx {
+    position: sticky !important
 }
 
 .p-fix {
