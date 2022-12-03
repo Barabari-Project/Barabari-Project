@@ -30,35 +30,35 @@
 	</style>
 
 	<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_layout-8c4f17fd.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_layout-4b850ce9.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/joinpages-05354c17.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/card-5107c414.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/start-2ebbddae.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-9dc4645b.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-d575339f.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-e9107acf.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/stores-7031d0e4.js">
+		<link rel="modulepreload" href="./_app/immutable/start-0457e20a.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-c335f3f6.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-fa2cdcb5.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-7b10d997.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores-ff994e1b.js">
 		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-7b9cbfbc.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-8d2a742b.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/mentor/_page.svelte-ec62dd1a.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/joinpages-79faf326.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/card-2dfcc32f.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/mentor/_page.svelte-31c376b7.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/joinpages-932506d5.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/card-14c6a614.js">
 </head>
 
 <body xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	
 
 
-<main class="app p-rel"><nav class="p-stx w-100 p-rel svelte-ribmgf"><div class="nav wait svelte-ribmgf"><input type="checkbox" id="nav-check" class="svelte-ribmgf">
-        <div class="nav-header svelte-ribmgf"><a href="/" class="nav-title d-b svelte-ribmgf">The Barabari Project</a></div>
-        <div class="nav-btn p-abs svelte-ribmgf"><label for="nav-check" class="svelte-ribmgf"><span class="svelte-ribmgf"></span>
-                <span class="svelte-ribmgf"></span>
-                <span class="svelte-ribmgf"></span></label></div>
+<main class="app p-rel"><nav class="p-stx w-100 p-rel svelte-1b380f1"><div class="nav wait svelte-1b380f1"><input type="checkbox" id="nav-check" class="svelte-1b380f1">
+        <div class="nav-header svelte-1b380f1"><a href="/" class="nav-title d-b svelte-1b380f1">The Barabari Project</a></div>
+        <div class="nav-btn p-abs svelte-1b380f1"><label for="nav-check" class="svelte-1b380f1"><span class="svelte-1b380f1"></span>
+                <span class="svelte-1b380f1"></span>
+                <span class="svelte-1b380f1"></span></label></div>
 
-        <div class="nav-links svelte-ribmgf"><a href="/candidate" class="svelte-ribmgf">Get Mentorship</a>
-            <a href="/mentor" class="svelte-ribmgf">Be a Mentor</a>
-            <a href="/volunteer" class="svelte-ribmgf">Join Us!</a>
-            <a href="/team" class="svelte-ribmgf">Meet the Team</a></div></div></nav>
+        <div class="nav-links svelte-1b380f1"><a href="/candidate" class="svelte-1b380f1">Get Mentorship</a>
+            <a href="/mentor" class="svelte-1b380f1">Be a Mentor</a>
+            <a href="/volunteer" class="svelte-1b380f1">Join Us!</a>
+            <a href="/team" class="svelte-1b380f1">Meet the Team</a></div></div></nav>
 
 
     <style>section {
@@ -69,11 +69,19 @@
             min-height: 100vh;
         }
         .arrow {
-            transform: translateX(-7px);
+            transform: translateX(-7px) scale(1);
             animation: 1.5s wobble ease infinite;
             background: #fff;
             color: var(--purple);
-            padding: 2px 15px;
+            padding: 2px 12px;
+            border: 1px solid #fff;
+            cursor: pointer;
+            transition: transform 0.15s ease-in-out;
+        }
+        .arrow:hover {
+            transform: translateX(-7px) scale(1.1);
+            border: 1px solid var(--purple);
+            color: var(--purple);
         }
         @media (prefers-reduced-motion) {
             .arrow {
@@ -83,50 +91,46 @@
     </style>
 
     
-    <div id="content" style="z-index: 0;" class="svelte-1ce5dj0"><div class="w-100"><div class="w-100 tc p-rel" style="background: var(--purple-grad);"><p class="w-100 mx-a svelte-1w782y1">The Barabari Project is a non-profit working to provide quality
-            training and mentorship to candidates from low-income categories,
-            rural backgrounds, underprivileged caste sections, and
-            underrepresented gender backgrounds. We want to become a gateway for
-            candidates who lack access to these opportunities, to up-skill
-            themselves, get well paying jobs, and become self-sufficient to take
-            ownership of their careers.
-        </p></div>
+    <div id="content" style="z-index: 0;" class="svelte-taqmqe"><div class="w-100"><div class="w-100 tc p-rel" style="background: var(--purple-grad);"><p class="w-100 mx-a svelte-1w782y1"><div slot="desc">The Barabari Project is a non-profit working to provide quality training
+        and mentorship to candidates from low-income categories, rural
+        backgrounds, underprivileged caste sections, and underrepresented gender
+        backgrounds.
+        <br><br>
+        Come join us as a mentor, doubt solver or technical content curator and positively
+        impact the lives of thousands of underprivileged candidates. Find all details
+        in the form below
+    </div></p></div>
     <h1 class="w-100 m0 p20" style="background:var(--yellow)">Help Out!</h1>
     <div class="limit mx-a svelte-1w782y1"><div class="rpm-10 card purple svelte-4nd001"><div class="f-col j-bw" style="font-size: 2rem;"><div>Be a mentor</div>
             <div class="f j-bw"><div style="max-width: 66%;"> </div>
-                <div class="rx10 arrow">→</div></div></div>
+                <a href="https://docs.google.com/forms/d/1utKmc4y1SJWNH0rzQSlTBcItT6IBiHkeb6Ivz5u3mKo/edit
+                " target="_blank" rel="noreferrer" class="rx10 arrow">→
+                </a></div></div>
 </div></div>
 </div></div>
 
     <hr class="w-50 o-50">
-    <footer class="p10 w-100" style="background: var(--yellow);font-size:0.8em"><div class="w-100 tc"><h3>The Barabari Project</h3>
-            <h4><i>Universal Access To Quality Jobs</i></h4></div>
-        <div class="f j-ar fw"><ul class="svelte-1ce5dj0"><li class="svelte-1ce5dj0"><a href="/candidate">Candidate</a></li>
-                <li class="svelte-1ce5dj0"><a href="/volunteer">Volunteer</a></li>
-                <li class="svelte-1ce5dj0"><a href="/mentor">Mentor</a></li></ul>
-            <ul class="svelte-1ce5dj0"><li class="svelte-1ce5dj0"><a href="/team">Team</a></li>
-                <li class="svelte-1ce5dj0">Links2</li>
-                <li class="svelte-1ce5dj0">Links3</li></ul></div></footer>
+    
 </main>
 
 
-		<script type="module" data-sveltekit-hydrate="zumk0i">
-			import { start } from "./_app/immutable/start-2ebbddae.js";
+		<script type="module" data-sveltekit-hydrate="721caq">
+			import { start } from "./_app/immutable/start-0457e20a.js";
 
 			start({
 				env: {},
 				hydrate: {
 					status: 200,
 					error: null,
-					node_ids: [0, 7],
+					node_ids: [0, 5],
 					params: {},
-					routeId: "/mentor",
-					data: (function(a){return [a,a]}(null)),
+					route: {"id":"/mentor"},
+					data: [null,null],
 					form: null
 				},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="zumk0i"]').parentNode,
-				trailing_slash: "never"
+				target: document.querySelector('[data-sveltekit-hydrate="721caq"]').parentNode,
+				version: "1670047368936"
 			});
 		</script>
 	
