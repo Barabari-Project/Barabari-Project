@@ -1,4 +1,4 @@
-import{S as H,i as J,s as P,w as j,x as C,y as D,f as V,t as q,z,k as d,q as g,l as u,m as v,r as _,h as c,n as h,b as S,C as o,B as T,a as x,c as I,p as E}from"../../../chunks/index-41fe9cc5.js";import{J as F}from"../../../chunks/joinpages-1f7b9ded.js";import{C as K}from"../../../chunks/card-c9091c2d.js";function R($){let e,r,t,n,a,l,f,p;return{c(){e=d("div"),r=g(`The Barabari Project is a non-profit working to provide quality training
+import{S as H,i as J,s as P,w as j,x as C,y as D,f as V,t as q,z,k as d,q as g,l as u,m as v,r as _,h as c,n as h,b as S,C as o,B as T,a as x,c as I,p as E}from"../../../chunks/index-09924cde.js";import{J as F}from"../../../chunks/joinpages-522e9e8e.js";import{C as K}from"../../../chunks/card-f00efc6f.js";function R($){let e,r,t,n,a,l,f,p;return{c(){e=d("div"),r=g(`The Barabari Project is a non-profit working to provide quality training
         and mentorship to candidates from low-income categories, rural
         backgrounds, underprivileged caste sections, and underrepresented gender
         backgrounds.
