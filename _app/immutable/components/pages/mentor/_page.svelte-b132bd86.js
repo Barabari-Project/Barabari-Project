@@ -1,0 +1,19 @@
+import{S as J,i as K,s as L,w as N,x as Y,y as F,f as G,t as Q,z as W,k as m,q as w,l as v,m as h,r as x,h as l,n as s,b as H,C as t,B as R,a as q,N as j,c as I,P as S,p as y}from"../../../chunks/index-ae7b8f11.js";import{J as O}from"../../../chunks/joinpages-e7e1d920.js";function X(B){let e,i,a,r,n,p,b,d;return{c(){e=m("div"),i=w(`The Barabari Project is a non-profit working to provide quality training
+        and mentorship to candidates from low-income categories, rural
+        backgrounds, underprivileged caste sections, and underrepresented gender
+        backgrounds.
+        `),a=m("br"),r=m("br"),n=w(`
+        Come join us as a
+        `),p=m("b"),b=w("mentor, doubt solver or technical content curator"),d=w(` and positively
+        impact the lives of thousands of underprivileged candidates. Find all details
+        in the form below`),this.h()},l(u){e=v(u,"DIV",{slot:!0});var c=h(e);i=x(c,`The Barabari Project is a non-profit working to provide quality training
+        and mentorship to candidates from low-income categories, rural
+        backgrounds, underprivileged caste sections, and underrepresented gender
+        backgrounds.
+        `),a=v(c,"BR",{}),r=v(c,"BR",{}),n=x(c,`
+        Come join us as a
+        `),p=v(c,"B",{});var o=h(p);b=x(o,"mentor, doubt solver or technical content curator"),o.forEach(l),d=x(c,` and positively
+        impact the lives of thousands of underprivileged candidates. Find all details
+        in the form below`),c.forEach(l),this.h()},h(){s(e,"slot","desc")},m(u,c){H(u,e,c),t(e,i),t(e,a),t(e,r),t(e,n),t(e,p),t(p,b),t(e,d)},p:R,d(u){u&&l(e)}}}function Z(B){let e,i,a,r,n,p,b,d,u,c,o,f,T,A,g,$;return{c(){e=m("div"),i=m("style"),a=q(),r=m("a"),n=m("div"),p=w("Apply Here!"),b=q(),d=j("svg"),u=j("path"),c=q(),o=m("a"),f=m("div"),T=w("Read More!"),A=q(),g=j("svg"),$=j("path"),this.h()},l(E){e=v(E,"DIV",{class:!0,slot:!0});var _=h(e);i=v(_,"STYLE",{});var V=h(i);V.forEach(l),a=I(_),r=v(_,"A",{href:!0,target:!0,rel:!0,class:!0});var k=h(r);n=v(k,"DIV",{style:!0});var C=h(n);p=x(C,"Apply Here!"),C.forEach(l),b=I(k),d=S(k,"svg",{viewBox:!0,height:!0,class:!0});var M=h(d);u=S(M,"path",{d:!0}),h(u).forEach(l),M.forEach(l),k.forEach(l),c=I(_),o=v(_,"A",{href:!0,target:!0,rel:!0,class:!0});var z=h(o);f=v(z,"DIV",{style:!0});var P=h(f);T=x(P,"Read More!"),P.forEach(l),A=I(z),g=S(z,"svg",{viewBox:!0,height:!0,class:!0});var D=h(g);$=S(D,"path",{d:!0}),h($).forEach(l),D.forEach(l),z.forEach(l),_.forEach(l),this.h()},h(){y(n,"font-size","2.25rem"),y(n,"line-height","1em"),y(n,"align-self","center"),s(u,"d","M11 29 24 16 11 3"),s(d,"viewBox","0 0 32 32"),s(d,"height","48"),s(d,"class","svelte-1q9zhim"),s(r,"href",`https://docs.google.com/forms/d/1utKmc4y1SJWNH0rzQSlTBcItT6IBiHkeb6Ivz5u3mKo/
+        `),s(r,"target","_blank"),s(r,"rel","noreferrer"),s(r,"class","blur fw4 w-33 tc m20 p20 p-rel f j-ar svelte-1q9zhim"),y(f,"font-size","2.25rem"),y(f,"line-height","1em"),y(f,"align-self","center"),s($,"d","M11 29 24 16 11 3"),s(g,"viewBox","0 0 32 32"),s(g,"height","48"),s(g,"class","svelte-1q9zhim"),s(o,"href",`https://docs.google.com/document/d/1SGicA4CjgESXWGYP1o6YQkI4Z0aOvNrxTyLvg_abKL8/
+        `),s(o,"target","_blank"),s(o,"rel","noreferrer"),s(o,"class","blur fw4 w-33 tc m20 p20 p-rel f j-ar svelte-1q9zhim"),s(e,"class","hero f-col j-ct p-rel h-100 svelte-1q9zhim"),s(e,"slot","max")},m(E,_){H(E,e,_),t(e,i),t(e,a),t(e,r),t(r,n),t(n,p),t(r,b),t(r,d),t(d,u),t(e,c),t(e,o),t(o,f),t(f,T),t(o,A),t(o,g),t(g,$)},p:R,d(E){E&&l(e)}}}function U(B){let e,i;return e=new O({props:{title:"Become a Mentor!",$$slots:{max:[Z],desc:[X]},$$scope:{ctx:B}}}),{c(){N(e.$$.fragment)},l(a){Y(e.$$.fragment,a)},m(a,r){F(e,a,r),i=!0},p(a,[r]){const n={};r&1&&(n.$$scope={dirty:r,ctx:a}),e.$set(n)},i(a){i||(G(e.$$.fragment,a),i=!0)},o(a){Q(e.$$.fragment,a),i=!1},d(a){W(e,a)}}}class re extends J{constructor(e){super(),K(this,e,null,U,L,{})}}export{re as default};
