@@ -24,19 +24,20 @@
 	</style>
 
 	<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_layout-6e025515.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/_page-7510e335.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/joinpages-c27f5e21.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/start-b593e847.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-fb3bcbd7.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-358b61f9.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-11c8e862.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/stores-1d19ff31.js">
-		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-9cbb603b.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/volunteer/_page.svelte-eacd8987.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/meta-2ca000da.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/joinpages-54f83652.js"><!-- HEAD_svelte-ylz94z_START -->
+		<link href="./_app/immutable/assets/_layout.ccd5d555.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_page.7510e335.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/joinpages.c27f5e21.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.6690aad5.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.daee325e.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.b4182430.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.fdfc9f15.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.ff144b21.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.ec226a0f.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.js.984db11e.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/volunteer-page.svelte.2699e04f.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/meta.68718d92.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/joinpages.3102d8fe.js"><!-- HEAD_svelte-ylz94z_START -->
 <title>Work with us! | The Barabari Project</title>
 <meta name="title" content="Work with us! | The Barabari Project">
 <meta name="description" content="We are a non-profit working to provide quality Tech based mentorship to candidates from underprivileged backgrounds. With one-to-one mentorship and curated training modules, we get them ready for jobs in the Tech sector">
@@ -124,7 +125,7 @@
     </div></p></div>
     <h1 class="w-100 m0 p20" style="background:var(--yellow)">Work with us!</h1>
     <div class="limit mx-a svelte-2vxsa3"></div>
-    <div class="mx-a"><div class="hero f-col j-ct p-rel h-100 svelte-1x162dn" slot="max" style="overflow: hidden;"><img src="/_app/immutable/assets/volunteer-e861a666.webp" alt="candidate" class="p-abs w-100 h-100" style="z-index:-1000;filter:blur(5px)">
+    <div class="mx-a"><div class="hero f-col j-ct p-rel h-100 svelte-1x162dn" slot="max" style="overflow: hidden;"><img src="/_app/immutable/assets/volunteer.e861a666.webp" alt="candidate" class="p-abs w-100 h-100" style="z-index:-1000;filter:blur(5px)">
         <a href="https://forms.gle/JHENNYSPp2SqDvEM9" target="_blank" rel="noreferrer" class="blur-16 bg-fffa fw4 CTA tc m20 p20 p-rel f j-ar svelte-1x162dn"><div style="align-self:center;">Apply Here!</div>
             <svg viewBox="0 0 32 32" height="48" class="svelte-1x162dn"><path d="M11 29 24 16 11 3"></path></svg></a>
         <a href="https://docs.google.com/document/d/1yREF25R3NRavN3GQ7vBQMWeJ3yjUdn44vU-hmyH6U8o/
@@ -142,22 +143,32 @@
 </main>
 
 
-		<script type="module" data-sveltekit-hydrate="12hnkoz">
-			import { start } from "./_app/immutable/start-b593e847.js";
+			
+			<script>
+				{
+					__sveltekit_154lg1i = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
 
-			start({
-				env: {},
-				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="12hnkoz"]').parentNode,
-				version: "1682486283132",
-				hydrate: {
-					node_ids: [0, 12],
-					data: [null,null],
-					form: null
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.6690aad5.js"),
+						import("./_app/immutable/entry/app.fdfc9f15.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 12],
+							data,
+							form: null,
+							error: null
+						});
+					});
 				}
-			});
-		</script>
-	
+			</script>
+		
 	</div>
 </body>
 
