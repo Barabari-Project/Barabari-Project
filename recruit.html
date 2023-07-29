@@ -20,23 +20,46 @@
 			--indigo: #4c2884;
 			--purple-grad: linear-gradient(to right, var(--blue), var(--purple));
 		}
+
+		.rx2,
+		.rx5,
+		.rx10,
+		.rx20 {
+			overflow: hidden;
+		}
+
+		.blur-16 {
+			filter: blur(16px);
+			--webkit-filter: blur(16px);
+			--moz-filter: blur(16px);
+		}
+
+		.blur-8 {
+			filter: blur(8px);
+			--webkit-filter: blur(8px);
+			--moz-filter: blur(8px);
+		}
+
+		.d-i {
+			display: inline;
+		}
 	</style>
 
 	<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_layout.a8420802.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_layout.dd715f2e.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/_page.e3a6dda8.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/joinpages.f787bdb0.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.1fec23ff.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.aeb1c968.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.6f362b87.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.3e4ea639.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.483a2312.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.49d7c835.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/stores.120d6ca8.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.0cee16b1.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.b4c016c6.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.8c743898.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.9945a573.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/recruit-page.svelte.74e62f08.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/recruit-page.svelte.25142dd2.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/meta.b7aff72b.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/joinpages.3fe41ec9.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/joinpages.6d94794d.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/candidate.84d7c987.js"><!-- HEAD_svelte-1fwdj2_START -->
 <title>Get Free Mentorship | The Barabari Project</title>
 <meta name="title" content="Get Free Mentorship | The Barabari Project">
@@ -63,7 +86,7 @@
 		
 
 
-<main class="app p-rel flow-x-h"><nav class="p-stx z-10 mx-a w-100 p-rel svelte-18b4uv9"><div class="nav d-b wait svelte-18b4uv9"><input type="checkbox" id="nav-check" class="svelte-18b4uv9">
+<main class="app p-rel flow-x-h"><nav class="p-stx mx-a w-100 p-rel svelte-18b4uv9" style="z-index: 10;"><div class="nav d-b wait svelte-18b4uv9"><input type="checkbox" id="nav-check" class="svelte-18b4uv9">
         <div class="nav-header d-i"><a href="/" class="nav-title d-ib svelte-18b4uv9"><img class="p-rel" src="/favicon.png" height="22px" width="22px" alt="" style="top:3px;">
                 The Barabari Project
             </a></div>
@@ -112,9 +135,9 @@
     </style>
 
     
-    <div id="content" class="z-1 svelte-jpz8vo">
+    <div id="content" style="z-index: 1;" class="svelte-29i43i">
 
-<div class="w-100"><div class="w-100 tc p-rel bg-222"><p class="w-100 mx-a svelte-15hj4rl"><div slot="desc"><span class="desktop-only">At Barabari, we offer free tech mentorship to underprivileged
+<div class="w-100"><div class="w-100 tc p-rel" style="background: #222;"><p class="w-100 mx-a svelte-15hj4rl"><div slot="desc"><span class="desktop-only">At Barabari, we offer free tech mentorship to underprivileged
             candidates to help them live their lives with dignity and contribute
             to the workforce.
         </span>
@@ -139,17 +162,17 @@
                         </p></div>
                 </div></div>
         <div class="rhs p-rel svelte-1nvpmha"><img src="/_app/immutable/assets/candidate.98938f0c.webp" alt="" class="w-100 p-abs z-0 h-100 svelte-1nvpmha" style="top:0;left:0;">
-            <div class="clearfix w-100 h-100 z-1 f-col tc j-ct bg-fff4" style="top:0;left:0;"><a href="https://docs.google.com/document/d/1yREF25R3NRavN3GQ7vBQMWeJ3yjUdn44vU-hmyH6U8o/
-        " target="_blank" rel="noreferrer" class="blur-8 bg-fffa w-66 fw4 tc mx-a p20 p-rel f j-ar" style="font-size: 1.5em;"><div style="align-self:center;">Get In Touch!</div>
+            <div class="clearfix w-100 h-100 f-col tc j-ct" style="top:0;left:0;background:#fff4;z-index:1"><a href="https://docs.google.com/document/d/1yREF25R3NRavN3GQ7vBQMWeJ3yjUdn44vU-hmyH6U8o/
+        " target="_blank" rel="noreferrer" class="blur-8 w-66 fw4 tc mx-a p20 p-rel f j-ar" style="font-size: 1.5em; background:#fff4;"><div style="align-self:center;">Get In Touch!</div>
                     <svg viewBox="0 0 32 32" height="48" class="svelte-1nvpmha"><path d="M11 29 24 16 11 3"></path></svg></a></div></div></div></div>
 </div></div>
 
-    <footer class="p10 w-100 tc svelte-jpz8vo"><div class="mx-a" style="max-width: 300px;"><div class="fw4" style="font-size:2rem;">The Barabari Project</div>
+    <footer class="p10 w-100 tc svelte-29i43i"><div class="mx-a" style="max-width: 300px;"><div class="fw4" style="font-size:2rem;">The Barabari Project</div>
             <div class="p10" style="font-size:1.1em"><i>Universal Access To Quality Jobs</i></div>
-            <div class="f j-ar"><a href="mailto:thebarabariproject@gmail.com" class="p5"><img class="rx5 icon svelte-jpz8vo" height="36px" width="36px" src="/icons/gmail.svg" alt="GMail">
-                    </a><a href="https://www.instagram.com/thebarabariproject/" class="p5"><img class="rx5 icon svelte-jpz8vo" height="36px" width="36px" src="/icons/insta.svg" alt="Instagram">
-                    </a><a href="https://twitter.com/BarabariProject" class="p5"><img class="rx5 icon svelte-jpz8vo" height="36px" width="36px" src="/icons/twitter.svg" alt="Twitter">
-                    </a><a href="https://www.linkedin.com/company/the-barabari-project/" class="p5"><img class="rx5 icon svelte-jpz8vo" height="36px" width="36px" src="/icons/lin.svg" alt="LinkedIn">
+            <div class="f j-ar"><a href="mailto:thebarabariproject@gmail.com" class="p5"><img class="rx5 icon svelte-29i43i" height="36px" width="36px" src="/icons/gmail.svg" alt="GMail">
+                    </a><a href="https://www.instagram.com/thebarabariproject/" class="p5"><img class="rx5 icon svelte-29i43i" height="36px" width="36px" src="/icons/insta.svg" alt="Instagram">
+                    </a><a href="https://twitter.com/BarabariProject" class="p5"><img class="rx5 icon svelte-29i43i" height="36px" width="36px" src="/icons/twitter.svg" alt="Twitter">
+                    </a><a href="https://www.linkedin.com/company/the-barabari-project/" class="p5"><img class="rx5 icon svelte-29i43i" height="36px" width="36px" src="/icons/lin.svg" alt="LinkedIn">
                     </a></div></div></footer>
 </main>
 
@@ -157,7 +180,7 @@
 			
 			<script>
 				{
-					__sveltekit_cvpbiu = {
+					__sveltekit_60i9cg = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -167,8 +190,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.1fec23ff.js"),
-						import("./_app/immutable/entry/app.483a2312.js")
+						import("./_app/immutable/entry/start.aeb1c968.js"),
+						import("./_app/immutable/entry/app.b4c016c6.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 5],
