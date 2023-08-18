@@ -64,20 +64,24 @@
 
 	<meta http-equiv="content-security-policy" content="">
 		<link href="./_app/immutable/assets/_layout.9cca9f55.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/joinpages.ecb34dd6.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.ae081478.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.eb3563e4.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.bc2dea28.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.37a01323.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.257ba9ff.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/stores.aa900c90.js">
+		<link href="./_app/immutable/assets/_layout.7a897be6.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_page.1694c8eb.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/primary.ecb34dd6.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.2325b411.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.652d0663.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.914453e6.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.35656674.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.daef5c76.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.4706c146.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/resources-page.svelte.5cfaaf46.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/joinpages.9c41fe0a.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/resources-layout.svelte.84203d30.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/resources-page.svelte.088d9e61.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/primary.4f4c0dfd.js">
 </head>
 
-<body xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<body xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<div class="d-c">
 		
 
@@ -131,10 +135,13 @@
     </style>
 
     
-    <div id="content" style="z-index: 1;" class="svelte-y97mz9"><div class="w-100"><header class="p5 tc p-rel bg-222 desc svelte-1641cbt"><div class="w-100 desc svelte-1641cbt"></div></header>
-    <h1 class="m0 p20 bg-fc3 svelte-1641cbt">Find out more!</h1>
+    <div id="content" style="z-index: 1;" class="svelte-y97mz9"><div class="w-100">
+    <h1 class="m0 p20 bg-fc3 svelte-1641cbt"><br>
+        Find out more!</h1>
     <div class="limit mx-a svelte-1641cbt"></div>
-    <div class="mx-a"></div>
+    <div class="mx-a"><section class="mx-a w-100 svelte-1lnisw9" slot="max"><a class="d-b svelte-1lnisw9" href="/resources/dsa"><h3 class="svelte-1lnisw9">DSA Guide</h3>
+        <p style="margin-bottom: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos, quia amet harum deserunt debitis consequatur a ipsum in eaque at</p>
+      </a></section></div>
 </div></div>
 
     <footer class="p10 w-100 tc bg-fc3 svelte-y97mz9"><div class="mx-a" style="max-width: 300px;"><div class="fw4" style="font-size:2rem;">The Barabari Project</div>
@@ -150,21 +157,21 @@
 			
 			<script>
 				{
-					__sveltekit_p591uc = {
+					__sveltekit_1u2mmqj = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
 					};
 
 					const element = document.currentScript.parentElement;
 
-					const data = [null,null];
+					const data = [null,null,{"type":"data","data":{posts:[{title:"DSA Guide",desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos, quia amet harum deserunt debitis consequatur a ipsum in eaque at",draft:false,slug:"dsa"}]},"uses":{"url":1}}];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.ae081478.js"),
-						import("./_app/immutable/entry/app.37a01323.js")
+						import("./_app/immutable/entry/start.2325b411.js"),
+						import("./_app/immutable/entry/app.35656674.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 7],
+							node_ids: [0, 2, 7],
 							data,
 							form: null,
 							error: null

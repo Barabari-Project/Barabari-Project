@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="../favicon.png" />
+	<meta name="viewport" content="width=device-width" />
+
+	<link rel="stylesheet" href="/css/atomic.css">
+	<link rel="stylesheet" href="/css/frames.css">
+
+	<style>
+		/*
+			DONT REMOVE
+			1. These are global styles
+			2. OR soon to be updated to AtomiCSS
+		 */
+		:root {
+			--yellow-hl-rgb: 254, 196, 49;
+			--yellow-hl: #eb2;
+			--yellow: #fc3;
+			--purple-rgb: 154, 76, 236;
+			--purple: #9a4cec;
+			--blue: #5345d8;
+			--indigo: #4c2884;
+			--purple-grad: linear-gradient(to right, var(--blue), var(--purple));
+		}
+
+		.rx2,
+		.rx5,
+		.rx10,
+		.rx20 {
+			overflow: hidden;
+		}
+
+		.blur-16 {
+			background: #fff8;
+			backdrop-filter: blur(16px);
+			--webkit-backdrop-filter: blur(16px);
+			--moz-backdrop-filter: blur(16px);
+		}
+
+		.blur-8 {
+			background: #fff8;
+			backdrop-filter: blur(8px);
+			--webkit-backdrop-filter: blur(8px);
+			--moz-backdrop-filter: blur(8px);
+		}
+
+		.d-i {
+			display: inline;
+		}
+
+		.bg-222 {
+			background: #222;
+			color: #fff !important;
+		}
+
+		.bg-fc3 {
+			background: var(--yellow);
+			color: #000;
+		}
+	</style>
+
+	<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout.9cca9f55.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_layout.7a897be6.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page.b649b80e.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.2325b411.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.652d0663.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.914453e6.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.35656674.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.daef5c76.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.4706c146.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.js.984db11e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/resources-layout.svelte.84203d30.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/resources-_slug_-page.svelte.4ca6052e.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/resources-_slug_-page.ts.dac8a2f7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page.093075fc.js">
+</head>
+
+<body xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<div class="d-c">
+		
+
+
+<main class="app p-rel flow-x-h"><nav class="p-stx mx-a w-100 p-rel svelte-18b4uv9" style="z-index: 10;"><div class="nav d-b wait svelte-18b4uv9"><input type="checkbox" id="nav-check" class="svelte-18b4uv9">
+        <div class="nav-header d-i"><a href="/" class="nav-title d-ib svelte-18b4uv9"><img class="p-rel" src="/favicon.png" height="22px" width="22px" alt="" style="top:3px;">
+                The Barabari Project
+            </a></div>
+        <div class="nav-btn p-abs svelte-18b4uv9"><label for="nav-check" class="svelte-18b4uv9"><span class="svelte-18b4uv9"></span>
+                <span class="svelte-18b4uv9"></span>
+                <span class="svelte-18b4uv9"></span></label></div>
+
+        
+        <div class="nav-links d-i svelte-18b4uv9"><a class="d-ib svelte-18b4uv9" href="/candidate">Get Mentorship
+                </a><a class="d-ib svelte-18b4uv9" href="/mentor">Be a Mentor
+                </a><a class="d-ib svelte-18b4uv9" href="/volunteer">Volunteer!
+                </a></div></div></nav>
+
+
+    <style>section {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100vw;
+            min-height: 100vh;
+        }
+        section:not(:first-of-type) {
+            overflow: hidden;
+        }
+        .arrow {
+            transform: translateX(-7px) scale(1);
+            animation: 1.5s wobble ease infinite;
+            background: #fff;
+            max-height: 1.42em;
+            color: var(--purple);
+            padding: 2px 12px;
+            border: 1px solid #fff;
+            cursor: pointer;
+            transition: transform 0.15s ease-in-out;
+        }
+        .arrow:hover {
+            transform: translateX(-7px) scale(1.1);
+            border: 1px solid var(--purple);
+            color: var(--purple);
+        }
+        @media (prefers-reduced-motion) {
+            .arrow {
+                animation: none;
+            }
+        }
+    </style>
+
+    
+    <div id="content" style="z-index: 1;" class="svelte-y97mz9"><div class="p20"><article class="blur-fff8 rpm-10 mx-a svelte-1xzxzh9" style="max-width:991px;"><p><br></p>
+    <header class="d-b" style="margin: 10px 0;"><h1 class="m0">DSA Guide</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos, quia amet harum deserunt debitis consequatur a ipsum in eaque at</p></header>
+    <hr>
+
+    
+
+    
+    <h1>DSA</h1>
+<h2>Basics of Language</h2>
+<details><summary class="heading">Basics of C++
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=yGB9jhsEsr8&t=20s&ab_channel=CodeWithHarry" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://geeksforgeeks.org/cpp-programming-basics/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">STL in C++
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=WgMPrLX-zsA&ab_channel=CodeHelp-byBabbar" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Basics of Java
+</summary><div class="wrapped"><ul><li><a href="https://www.w3schools.com/java/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=UmnCZ7-9yDY&ab_channel=ApnaCollege" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Pattern Printing
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/cpp-program-to-print-pyramid-patterns/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/programs-printing-pyramid-patterns-java/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<h2>Time Complexity</h2>
+<details><summary class="heading">Understanding Time and Space Complexity
+</summary><div class="wrapped"><ul><li><a href="https://www.hackerearth.com/practice/basic-programming/complexity-analysis/time-and-space-complexity/tutorial/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Worst - Average - Best Case Time Analysis
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/worst-average-and-best-case-analysis-of-algorithms/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">The time complexity of iterative programs
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=FEnwM-iDb2g&ab_channel=Uncode-GATEComputerSciencebyUnacademy" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Time Complexity of Fibonacci
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/time-complexity-recursive-fibonacci-program/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Time Complexity Problems
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/analysis-algorithms-set-5-practice-problems/?ref=rp" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<h2>BIT Manipulation</h2>
+<details><summary class="heading">Basic Theory
+</summary><div class="wrapped"><ul><li><a href="https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/tutorial/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Minimum Flips
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Counting Bits
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/counting-bits/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Single Number Problem
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/single-number/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=krgK0UlfNYY&ab_channel=Techdose" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Single Number 2 Problem
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/single-number-ii/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=cOFAmaMBVps&ab_channel=Techdose" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">BIT Wise And Of Number Range
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/bitwise-and-of-numbers-range/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=-qrpJykY2gE&ab_channel=Techdose" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<h2>Arrays &amp; Vectors</h2>
+<details><summary class="heading">Understanding Array
+</summary><div class="wrapped"><ul><li><p><a href="https://www.hackerearth.com/practice/data-structures/arrays/1-d/tutorial/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=55l-aZ7_F24&t=1s&ab_channel=NesoAcademy" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></p></li></ul></div></details>
+<details><summary class="heading">Understanding Vectors
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=Beh-lJwQJcM&ab_channel=CodingNinjas" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/vector-in-cpp-stl/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Practice 1 : Array
+</summary><div class="wrapped"><h4>Simple Array Sum</h4>
+<ul><li><a href="https://www.hackerrank.com/challenges/simple-array-sum/problem" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Reverse Number</h4>
+<ul><li><a href="https://www.hackerrank.com/challenges/arrays-ds/problem" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Plus Minus</h4>
+<ul><li><a href="https://www.hackerrank.com/challenges/plus-minus/problem" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Finding Smallest and Second Smallest Element In Array</h4>
+<ul><li><a href="https://practice.geeksforgeeks.org/problems/find-the-smallest-and-second-smallest-element-in-an-array3226/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Find Missing Number</h4>
+<ul><li><a href="https://leetcode.com/problems/missing-number/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Find Majority Element</h4>
+<ul><li><a href="https://leetcode.com/problems/majority-element/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Divisible Sum Pair</h4>
+<ul><li><a href="https://www.hackerrank.com/challenges/divisible-sum-pairs/problem" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Sales By March Problem</h4>
+<ul><li><a href="https://www.hackerrank.com/challenges/sock-merchant/problem" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Subarrays / Subtrings / Subsequence
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/subarraysubstring-vs-subsequence-and-programs-to-generate-them/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Maximum Subarray
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/maximum-subarray/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">2D Array
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=Xx1tWbb37hY&t=16s&ab_channel=ApnaCollege" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=18Zt5I4S45o&ab_channel=ApnaCollege" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Pratice 2 : 2D Array
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/flipping-an-image/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/transpose-matrix/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/toeplitz-matrix/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Sieve of Eratosthenes
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=eKp56OLhoQs&ab_channel=mycodeschool" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/sieve-of-eratosthenes/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/count-primes/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Two Pointer
+</summary><div class="wrapped"><ul><li><a href="https://algodaily.com/lessons/using-the-two-pointer-technique" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=ijKmiFqjzi4&ab_channel=SCALER" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/merge-sorted-array/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/sort-colors/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Sliding Window Approach
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/window-sliding-technique/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/max-consecutive-ones-iii/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/spiral-matrix/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<h2>Strings and Character Arrays</h2>
+<details><summary class="heading">Character Arrays
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=TkTgo_7ab0M&list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ&index=29&ab_channel=ApnaCollege" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Strings: Basic
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=W8hPsBquD6Y&list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ&index=32&ab_channel=ApnaCollege" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Strings: Medium
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=1pVI0yiEBR8&list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ&index=33&ab_channel=ApnaCollege" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.scaler.com/topics/cpp/strings-in-cpp/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/string-class-in-java/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Practice 1: Strings
+</summary><div class="wrapped"><ul><li><a href="https://practice.geeksforgeeks.org/problems/reverse-words-in-a-given-string5459/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/find-equal-point-in-string-of-brackets2542/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/check-if-string-is-rotated-by-two-places-1587115620/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/pangram-checking-1587115620/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/implement-atoi/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/validate-an-ip-address-1587115621/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/multiply-two-strings/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<h2>Searching &amp; Sorting</h2>
+<details><summary class="heading">Linear Search
+</summary><div class="wrapped"><p><a href="https://www.youtube.com/watch?v=13ocRMSJy5M&t=12s&ab_channel=ApnaCollege" rel="nofollow">https://www.youtube.com/watch?v=13ocRMSJy5M&amp;t=12s&amp;ab_channel=ApnaCollege</a></p></div></details>
+<details><summary class="heading">Binary Search
+</summary><div class="wrapped"><p><a href="https://www.youtube.com/watch?v=YzT8zDPihmc&ab_channel=CS50" rel="nofollow">https://www.youtube.com/watch?v=YzT8zDPihmc&amp;ab_channel=CS50</a></p></div></details>
+<details><summary class="heading">Recursive Solution
+</summary><div class="wrapped"><p><a href="https://www.youtube.com/watch?v=j5uXyPJ0Pew&ab_channel=mycodeschool" rel="nofollow">https://www.youtube.com/watch?v=j5uXyPJ0Pew&amp;ab_channel=mycodeschool</a></p></div></details>
+<details><summary class="heading">Iterative Solution
+</summary><div class="wrapped"><p><a href="https://leetcode.com/problems/binary-search/" rel="nofollow">https://leetcode.com/problems/binary-search/</a>
+<a href="https://www.youtube.com/watch?v=OAZc1zwjERU&ab_channel=mycodeschool" rel="nofollow">https://www.youtube.com/watch?v=OAZc1zwjERU&amp;ab_channel=mycodeschool</a>
+<a href="https://www.geeksforgeeks.org/binary-search/" rel="nofollow">https://www.geeksforgeeks.org/binary-search/</a></p></div></details>
+<details><summary class="heading">First and Last occurrence of a number
+</summary><div class="wrapped"><p><a href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/" rel="nofollow">https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/</a>
+<a href="https://www.youtube.com/watch?v=OE7wUUpJw6I&ab_channel=mycodeschool" rel="nofollow">https://www.youtube.com/watch?v=OE7wUUpJw6I&amp;ab_channel=mycodeschool</a></p></div></details>
+<details><summary class="heading">First Bad Problem
+</summary><div class="wrapped"><p><a href="https://leetcode.com/problems/first-bad-version/" rel="nofollow">https://leetcode.com/problems/first-bad-version/</a>
+<a href="https://www.youtube.com/watch?v=SiDMFIMldgg&ab_channel=Techdose" rel="nofollow">https://www.youtube.com/watch?v=SiDMFIMldgg&amp;ab_channel=Techdose</a></p></div></details>
+<details><summary class="heading">Square Root Problem
+</summary><div class="wrapped"><p><a href="https://leetcode.com/problems/sqrtx/" rel="nofollow">https://leetcode.com/problems/sqrtx/</a>
+<a href="https://www.youtube.com/watch?v=VYtEKhxKd1Q&ab_channel=TerribleWhiteboard" rel="nofollow">https://www.youtube.com/watch?v=VYtEKhxKd1Q&amp;ab_channel=TerribleWhiteboard</a></p></div></details>
+<details><summary class="heading">Minimum Rotated Sorted Array
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=OXkLNPalfRs&ab_channel=KnowledgeCenter" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=x3UclQq_EVk&ab_channel=HellgeekArena" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/koko-eating-bananas/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=Sp2sRLcLND0&ab_channel=MichaelMuinos" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">BINARY SEARCH ( STL + Practice )
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/binary-search-functions-in-c-stl-binary_search-lower_bound-and-upper_bound/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/online-election/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/median-of-two-sorted-arrays/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://medium.com/@hazemu/finding-the-median-of-2-sorted-arrays-in-logarithmic-time-1d3f2ecbeb46" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=LPFhl65R7ww&ab_channel=TusharRoy-CodingMadeSimple" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/find-right-interval/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Basics Sorting Algorithms
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=l7-f9gS8VOs&ab_channel=freeCodeCamp.org" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Selection Sort
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/selection-sort/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Bubble Sort
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/bubble-sort/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Insertion Sort
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/insertion-sort/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Merge Sort
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/merge-sort/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Quick Sort
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/quick-sort/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Heap Sort
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/heap-sort/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<h2>Recursion</h2>
+<details><summary class="heading">Introduction to recursion
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=M2uO2nMT0Bk&ab_channel=KunalKushwaha" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Recursion Detailed Playlist
+</summary><div class="wrapped"><p>-<a href="https://www.youtube.com/watch?v=_-2u4EPHD88&list=PLDzeHZWIZsTqBmRGnsCOGNDG5FY0G04Td&ab_channel=CodeHelp-byBabbar" rel="nofollow">https://www.youtube.com/watch?v=_-2u4EPHD88&amp;list=PLDzeHZWIZsTqBmRGnsCOGNDG5FY0G04Td&amp;ab_channel=CodeHelp-byBabbar</a></p></div></details>
+<details><summary class="heading">More on recursion
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=B3U6LExgevE&ab_channel=BytebyByte" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<h2>Dynamic Programming</h2>
+<details><summary class="heading">Introduction to dynamic programming
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=PGsgv6nXhLw&list=RDLVsPeKpctCL-c&index=3&ab_channel=CodeHelp-byBabbar" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Learn Dynamic Programming
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/introduction-to-dynamic-programming-data-structures-and-algorithm-tutorials/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Overlapping Subproblem
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/overlapping-subproblems-property-in-dynamic-programming-dp-1/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=mmjDZGSr7EA&ab_channel=GeeksforGeeks" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Optimal Substructure
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/optimal-substructure-property-in-dynamic-programming-dp-2/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=JWTqsNvtwP4&ab_channel=GeeksforGeeks" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Question Solving in Dynamic Programming
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=nqowUJzG-iM&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&ab_channel=AdityaVerma" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Practice 1 : DP
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/climbing-stairs/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/unique-paths/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/count-sorted-vowel-strings/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/house-robber/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">COIN DP
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/coin-change-dp-7/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=DJ4a7cmjZY0&ab_channel=BackToBackSWE" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/coin-change-ii/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">DICE ROLL DP
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/dice-throw-dp-30/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">CUTTING DP
+</summary><div class="wrapped"><ul><li><a href="https://iq.opengenus.org/maximum-product-cutting/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=qIwrg0-Be0M&ab_channel=codeExplainer" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/integer-break/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">WORD BREAK DP
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/word-break-problem-dp-32/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=1U4jQusbeJc&ab_channel=Knapsack" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/word-break/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">LIS and related DP
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=CE2b_-XfVDk&ab_channel=TusharRoy-CodingMadeSimple" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/longest-increasing-subsequence/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/largest-divisible-subset/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/longest-string-chain/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">BOX DP
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/box-stacking-problem-dp-22/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=9mod_xRB-O0&ab_channel=TusharRoy-CodingMadeSimple" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/box-stacking/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">LCS DP
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=sSno9rV8Rhg&ab_channel=AbdulBari" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/longest-common-subsequence/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Edit Distance and related DP
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/edit-distance-dp-5/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=XJ6e4BQYJ24&ab_channel=GauravSen" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/edit-distance/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Knapsack DP
+</summary><div class="wrapped"><ul><li><a href="https://www.educative.io/courses/grokking-dynamic-programming-a-deep-dive-using-cpp/x1gVBwOBz4n" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.educative.io/courses/grokking-dynamic-programming-a-deep-dive-using-cpp/xlRrr451r5P" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=xOlhR_2QCXY&ab_channel=CSDojo" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Partition DP
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=s6FhG--P7z0&ab_channel=TusharRoy-CodingMadeSimple" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/partition-equal-subset-sum/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/minimum-sum-partition3317/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Optimal Strategy For Game DP
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/optimal-strategy-for-a-game-dp-31/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=WxpIHvsu1RI&ab_channel=TusharRoy-CodingMadeSimple" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/stone-game/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Egg Dropping DP
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/egg-dropping-puzzle-dp-11/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=KVfxgpI3Tv0&ab_channel=GeeksforGeeks" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/super-egg-drop/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Minimum Cost to cut a stick
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/minimum-cost-to-cut-a-stick/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Boolean Parenthesis DP
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=oyj9tRZhmis&ab_channel=MaxLevy" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.interviewbit.com/problems/evaluate-expression-to-true/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Matrix Chain DP
+</summary><div class="wrapped"><ul><li><a href="http://www.columbia.edu/~cs2035/courses/csor4231.F11/matrix-chain.pdf" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=vgLJZMUfnsU&ab_channel=TusharRoy-CodingMadeSimple" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Practice 2: DP
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/wiggle-subsequence/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/minimum-falling-path-sum-ii/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/palindrome-partitioning-iii/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/shortest-common-supersequence/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<h2>Pointers</h2>
+<details><summary class="heading">Basics
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=h-HBipu_1P0&ab_channel=mycodeschool" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.programiz.com/cpp-programming/pointers" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Practice 1: Pointers
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/output-c-programs-set-47-pointers/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<h2>Linked List</h2>
+<details><summary class="heading">Basics of linked list
+</summary><div class="wrapped"><p><a href="https://www.youtube.com/watch?v=R9PTBwOzceo&ab_channel=NesoAcademy" rel="nofollow">https://www.youtube.com/watch?v=R9PTBwOzceo&amp;ab_channel=NesoAcademy</a></p></div></details>
+<details><summary class="heading">Reading About Linked Lists
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/introduction-to-linked-list-data-structure-and-algorithm-tutorial/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/what-is-linked-list/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-linked-list/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a> <a href="https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-linked-list/" rel="nofollow">https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-linked-list/</a></li>
+<li><a href="https://geeksforgeeks.org/linked-list-vs-array/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=48uzKhtyEvI&ab_channel=Telusko" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://stackoverflow.com/questions/393556/when-to-use-a-linked-list-over-an-array-array-list" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.reddit.com/r/learnprogramming/comments/15mxrt/what_are_the_real_world_applications_of_linked/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Details of Linked Lists
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=4tU7d0TTiZQ&ab_channel=AnujBhaiya" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.programiz.com/dsa/linked-list-operations" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.programiz.com/dsa/linked-list-types" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Linked List Implementations
+</summary><div class="wrapped"><h4>Print Linked List</h4>
+<ul><li><a href="https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Insert Linked List</h4>
+<ul><li><a href="https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Compare Linked List</h4>
+<ul><li><a href="https://practice.geeksforgeeks.org/problems/count-nodes-of-linked-list/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.hackerrank.com/challenges/compare-two-linked-lists/problem" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Deleting Linked List</h4>
+<ul><li><a href="https://www.geeksforgeeks.org/deletion-in-linked-list/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.hackerrank.com/challenges/delete-a-node-from-a-linked-list/problem" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Loop in a linked list</h4>
+<ul><li><a href="https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/linked-list-cycle/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>The intersection of 2 linked lists</h4>
+<ul><li><a href="https://leetcode.com/problems/intersection-of-two-linked-lists/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Merge 2 sorted linked list</h4>
+<ul><li><a href="https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Merge 2 unsorted LL</h4>
+<ul><li><a href="https://www.geeksforgeeks.org/merge-two-unsorted-linked-lists-to-get-a-sorted-list/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Practice 1: Linked List
+</summary><div class="wrapped"><ul><li><a href="https://www.hackerrank.com/challenges/delete-duplicate-value-nodes-from-a-sorted-linked-list/problem" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/add-1-to-a-number-represented-as-linked-list/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/reorder-list/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/reverse-nodes-in-k-group/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/merge-k-sorted-lists/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Reverse Link List
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/reverse-a-linked-list/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/reverse-linked-list/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Doubly Linked List
+</summary><div class="wrapped"><ul><li><a href="https://www.programiz.com/dsa/doubly-linked-list" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Rotate  Linked List
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/rotate-list/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/reverse-linked-list-ii/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Circular Linked List
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=1t8NAjIXvVA&ab_channel=ApnaCollege" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/circular-linked-list/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/delete-every-kth-node-from-circular-linked-list/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Practice 2: Linked List Quiz
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/data-structure-gq/top-mcqs-on-linked-list-data-structure-with-answers/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://quizizz.com/admin/quiz/5f336be71f3fd4001bf66c69/linked-lists" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Practice 3: Linked List Extra Questions
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/exchange-first-last-node-circular-linked-list/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/reverse-a-doubly-linked-list/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/intersection-of-two-sorted-linked-lists/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<h2>Stacks</h2>
+<details><summary class="heading">Introduction to Stack
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=F1F2imiOJfk&ab_channel=mycodeschool" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/stack-class-in-java/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/stack-in-cpp-stl/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Understanding function call stack
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=x9yuHFyuWZg&ab_channel=GateSmashers" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Array Implementation of Stack
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=sFVxsglODoo&ab_channel=mycodeschool" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/implement-two-stacks-in-an-array/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/efficiently-implement-k-stacks-single-array/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Min Stack &amp; Questions
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/design-a-stack-that-supports-getmin-in-o1-time-and-o1-extra-space/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.hackerrank.com/challenges/maximum-element/problem" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">BODMAS
+</summary><div class="wrapped"><ul><li><a href="https://thirdspacelearning.com/blog/what-is-bodmas/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Infix / Prefix / Postfix
+</summary><div class="wrapped"><ul><li><a href="https://www.baeldung.com/cs/infix-prefix-postfix#:~:text=The%20infix%20notation%20uses%20parentheses,are%20appropriate%20for%20particular%20applications" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div>
+      </a>.</li>
+<li><a href="https://www.youtube.com/watch?v=6T3jMNUCRNU&ab_channel=ApnaCollege" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=MuF5p8-oWc8&list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ&index=74&ab_channel=ApnaCollege" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=5B6jw4wOJR0&list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ&index=75&ab_channel=ApnaCollege" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=mg9yi6YuAVk&list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ&index=76&ab_channel=ApnaCollege" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=snDDBjT8jYA&list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ&index=77&ab_channel=ApnaCollege" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Practice 1: Stacks
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/valid-parentheses/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.hackerrank.com/challenges/equal-stacks/problem" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/the-celebrity-problem/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/next-larger-element-1587115620/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/basic-calculator/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/number-of-atoms/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/stock-span-problem-1587115621/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.hackerrank.com/challenges/largest-rectangle/problem" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/maximal-rectangle/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<h2>Queues</h2>
+<details><summary class="heading">Introduction to Queues
+</summary><div class="wrapped"><ul><li><a href="https://www.coursera.org/lecture/data-structures/queues-EShpq" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Implementing Queues
+</summary><div class="wrapped"><h4>Arrays</h4>
+<ul><li><a href="https://www.geeksforgeeks.org/introduction-and-array-implementation-of-queue/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Linked List</h4>
+<ul><li><a href="https://www.geeksforgeeks.org/queue-linked-list-implementation/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Stacks</h4>
+<ul><li><a href="https://www.geeksforgeeks.org/queue-using-stacks/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.hackerrank.com/challenges/queue-using-two-stacks/problem" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Circular Queue &amp; Deque
+</summary><div class="wrapped"><ul><li><a href="https://www.programiz.com/dsa/circular-queue" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.programiz.com/dsa/deque" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Practice 1: Queues
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/design-circular-deque/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/design-circular-queue/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://afteracademy.com/blog/sliding-window-maximum/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/sliding-window-maximum/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/jump-game-vi/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<h2>Trees</h2>
+<details><summary class="heading">Introduction
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=qH6yxkw0u78&ab_channel=mycodeschool" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Binary Tree
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=H5JubkIy_p8&ab_channel=mycodeschool" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a>
+<a href="https://www.geeksforgeeks.org/introduction-to-binary-tree-data-structure-and-algorithm-tutorials/" rel="nofollow">https://www.geeksforgeeks.org/introduction-to-binary-tree-data-structure-and-algorithm-tutorials/</a>
+<a href="https://www.geeksforgeeks.org/binary-tree-array-implementation/#:~:text=Given%20an%20array%20that%20represents,is%20no%20parent%20for%20root" rel="nofollow">https://www.geeksforgeeks.org/binary-tree-array-implementation/#:~:text=Given%20an%20array%20that%20represents,is%20no%20parent%20for%20root</a>.</li></ul></div></details>
+<details><summary class="heading">Complete and Full Binary Tree
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/difference-between-full-and-complete-binary-tree/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://web.cecs.pdx.edu/~sheard/course/Cs163/Doc/FullvsComplete.html" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Binary Tree Traversal
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=gm8DUJJhmY4&ab_channel=mycodeschool" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Inorder</h4>
+<ul><li><a href="https://www.youtube.com/watch?v=5dySuyZf9Qg&ab_channel=MichaelSambol" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/binary-tree-inorder-traversal/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Pre-order</h4>
+<ul><li><a href="https://www.youtube.com/watch?v=1WxLM2hwL-U&ab_channel=MichaelSambol" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/iterative-preorder-traversal/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/binary-tree-preorder-traversal/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Post-order</h4>
+<ul><li><a href="https://www.youtube.com/watch?v=4zVdfkpcT6U&ab_channel=MichaelSambol" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/iterative-postorder-traversal/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/binary-tree-postorder-traversal/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Level Order</h4>
+<ul><li><a href="https://www.youtube.com/watch?v=86g8jAQug04&ab_channel=mycodeschool" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/level-order-tree-traversal/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/binary-tree-level-order-traversal/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Practice Tree Traversal</h4>
+<ul><li><a href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/average-of-levels-in-binary-tree/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Get tree from Inorder + Preorder Traversal</h4>
+<ul><li><a href="https://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Get tree from Postorder + Inorder Traversal</h4>
+<ul><li><a href="https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Get tree from  Preorder + PostOrder Traversal</h4>
+<ul><li><a href="https://www.geeksforgeeks.org/full-and-complete-binary-tree-from-given-preorder-and-postorder-traversals/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Further Reading On Traversal</h4>
+<ul><li><a href="https://www.geeksforgeeks.org/construct-a-binary-tree-from-parent-array-representation/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/create-a-tree-in-level-order/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Height and Diameter Of Binary Tree
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/find-the-maximum-depth-or-height-of-a-tree/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/diameter-of-a-binary-tree/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/diameter-of-binary-tree/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">General Practice Trees
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/same-tree/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/symmetric-tree/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/merge-two-binary-trees/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/leaf-similar-trees/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/balanced-binary-tree/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">BST Basics
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=pYT9F8_LFTM&ab_channel=mycodeschool" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Searching</h4>
+<ul><li><a href="https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/search-in-a-binary-search-tree/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Insert</h4>
+<ul><li><a href="https://leetcode.com/problems/insert-into-a-binary-search-tree/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Delete</h4>
+<ul><li><a href="https://www.geeksforgeeks.org/deletion-in-binary-search-tree/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Practice BST Basic
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/validate-binary-search-tree/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/inorder-successor-in-bst/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/trim-a-binary-search-tree/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/two-sum-iv-input-is-a-bst/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/range-sum-of-bst/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/binary-search-tree-iterator/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Trees: LCA
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=13m9ZCB8gjw&ab_channel=TusharRoy-CodingMadeSimple" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-tree-using-parent-pointer/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.hackerrank.com/challenges/binary-search-tree-lowest-common-ancestor/problem" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Practice 2: Trees
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/path-sum/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/path-sum-ii/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/path-sum-iii/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/sum-root-to-leaf-numbers/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/delete-leaves-with-a-given-value/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Heap: Min and Max
+</summary><div class="wrapped"><ul><li><a href="https://www.programiz.com/dsa/heap-data-structure" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Understanding Heap In-depth</h4>
+<ul><li><a href="https://www.youtube.com/watch?v=NKJnHewiGdc&ab_channel=CodeHelp-byBabbar" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/max-heap-in-java/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Building a Heap</h4>
+<ul><li><a href="https://www.youtube.com/watch?v=ywx-Onrdx4U&ab_channel=AnujBhaiya" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/building-heap-from-array/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Heap Sort</h4>
+<ul><li><a href="https://www.youtube.com/watch?v=HqPJF2L5h9U&ab_channel=AbdulBari" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Practice 3: Heap
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/check-if-a-given-binary-tree-is-heap/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/how-to-check-if-a-given-array-represents-a-binary-heap/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/k-closest-points-to-origin/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/find-k-pairs-with-smallest-sums/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Priority Queue : Details + Implementation
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/priority-queue-set-1-introduction/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/priority-queue-in-cpp-stl/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/priority-queue-class-in-java/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Practice 4: Heap Extra
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/kth-largest-element-in-an-array/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.interviewbit.com/problems/meeting-rooms/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<h2>Greedy</h2>
+<details><summary class="heading">Introduction
+</summary><div class="wrapped"><ul><li><a href="https://emre.me/algorithms/greedy-algorithms/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=HZOUwKCKF5o&ab_channel=CodeHelp-byBabbar" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=ARvQcqJ_-NY&ab_channel=AbdulBari" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Types Of Greedy Problems
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=oTTzNMHM05I&ab_channel=AbdulBari" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=zPtI8q9gvX8&ab_channel=AbdulBari" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Practice 1:  Greedy
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/jump-game/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/boats-to-save-people/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/car-pooling/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/non-overlapping-intervals/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/candy/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<h2>Graph</h2>
+<details><summary class="heading">Introduction Graph Data Structure
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=gXgEDyodOJU&ab_channel=mycodeschool" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Types Of Graphs (see till 9:04)
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=eQA-m22wjTQ&t=143s&ab_channel=WilliamFiset" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Representing Graphs (9:04 Onwards)
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=eQA-m22wjTQ&t=543s&ab_channel=WilliamFiset" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/graph-and-its-representations/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Using Edge list</h4>
+<ul><li><a href="https://www.youtube.com/watch?v=ZdY1Fp9dKzs&ab_channel=mycodeschool" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Adjacency Matrix</h4>
+<ul><li><a href="https://www.youtube.com/watch?v=9C2cpQZVRBA&ab_channel=mycodeschool" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Adjacency List</h4>
+<ul><li><a href="https://www.youtube.com/watch?v=k1wraWzqtvQ&ab_channel=mycodeschool" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Practice 1: Representation</h4>
+<ul><li><a href="https://leetcode.com/problems/find-the-town-judge/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Graph Traversal
+</summary><div class="wrapped"><h4>BFS &amp; DFS</h4>
+<ul><li><a href="https://www.youtube.com/watch?v=pcKY4hjDrxk&ab_channel=AbdulBari" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Implementation DFS</h4>
+<ul><li><a href="https://www.programiz.com/dsa/graph-dfs" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Implementation BFS</h4>
+<ul><li><a href="https://www.programiz.com/dsa/graph-bfs" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Cycle Detection
+</summary><div class="wrapped"><h4>Undirected Graph</h4>
+<ul><li><a href="https://www.youtube.com/watch?v=n_t0a_8H8VY&t=321s&ab_channel=TusharRoy-CodingMadeSimple" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/detect-cycle-undirected-graph/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul>
+<h4>Directed Graph</h4>
+<ul><li><a href="https://www.youtube.com/watch?v=rKQaZuoUR4M&t=14s&ab_channel=TusharRoy-CodingMadeSimple" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.geeksforgeeks.org/detect-cycle-direct-graph-using-colors/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/course-schedule/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Bipartite Graph
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/bipartite-graph/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=mVmXwFkgoJ0&ab_channel=GeeksforGeeks" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/is-graph-bipartite/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Connected Components in Graph
+</summary><div class="wrapped"><ul><li><a href="https://www.baeldung.com/cs/graph-connected-components" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=I6v0itcISSY&t=89s&ab_channel=takeUforward" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/number-of-provinces/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Practice 2: Graphs
+</summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/number-of-operations-to-make-network-connected/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Topological Sort
+</summary><div class="wrapped"><ul><li><a href="https://www.hackerearth.com/practice/algorithms/graphs/topological-sort/tutorial/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=ddTC4Zovtbc&ab_channel=TusharRoy-CodingMadeSimple" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/course-schedule-ii/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Path Finding: Graph
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/find-paths-given-source-destination/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.youtube.com/watch?v=SZ3zpzQk2jg&ab_channel=KnowledgeCenter" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/all-paths-from-source-to-target/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details>
+<details><summary class="heading">Shortest Path
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/shortest-path-unweighted-graph/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://www.coursera.org/lecture/algorithms-graphs-data-structures/bfs-and-shortest-paths-ZAaJA" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li>
+<li><a href="https://leetcode.com/problems/rotting-oranges/" class="f d-b blur rpm-5 meta"><img class="rx5" src="/icons/barabari.png?&icon;" alt="&title;" rel="external">
+      <div><div class="fw7">&amp;title;</div>
+        <div class="desc">&amp;desc;</div></div></a></li></ul></div></details></article>
+</div></div>
+
+    <footer class="p10 w-100 tc bg-fc3 svelte-y97mz9"><div class="mx-a" style="max-width: 300px;"><div class="fw4" style="font-size:2rem;">The Barabari Project</div>
+            <div class="p10" style="font-size:1.1em"><i>Universal Access To Quality Jobs</i></div>
+            <div class="f j-ar"><a href="mailto:thebarabariproject@gmail.com" class="p5"><img class="rx5 icon svelte-y97mz9" height="36px" width="36px" src="/icons/gmail.svg" alt="GMail">
+                    </a><a href="https://www.instagram.com/thebarabariproject/" class="p5"><img class="rx5 icon svelte-y97mz9" height="36px" width="36px" src="/icons/insta.svg" alt="Instagram">
+                    </a><a href="https://twitter.com/BarabariProject" class="p5"><img class="rx5 icon svelte-y97mz9" height="36px" width="36px" src="/icons/twitter.svg" alt="Twitter">
+                    </a><a href="https://www.linkedin.com/company/the-barabari-project/" class="p5"><img class="rx5 icon svelte-y97mz9" height="36px" width="36px" src="/icons/lin.svg" alt="LinkedIn">
+                    </a></div></div></footer>
+</main>
+
+
+			
+			<script>
+				{
+					__sveltekit_1u2mmqj = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null,{"type":"data","data":{post:{title:"DSA Guide",desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos, quia amet harum deserunt debitis consequatur a ipsum in eaque at",draft:false,slug:"dsa"}},"uses":{"params":["slug"],"url":1}}];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.2325b411.js"),
+						import("../_app/immutable/entry/app.35656674.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 8],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		
+	</div>
+</body>
+
+</html>
