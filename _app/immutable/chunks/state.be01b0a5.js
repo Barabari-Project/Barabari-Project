@@ -1,0 +1,1 @@
+import{w as o}from"./index.5e9af959.js";const s=o(!1),a=()=>{const e=new URL(window.location.href);e.searchParams.get("demo")==="true"||e.hostname==="localhost"?s.set(!0):s.set(!1)};export{a as c,s as i};
