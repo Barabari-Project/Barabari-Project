@@ -1,0 +1,47 @@
+:root {
+  --yellow-hl-rgb: 254, 196, 49;
+  --yellow-hl: #eb2;
+  --yellow: #fc3;
+  --purple-rgb: 154, 76, 236;
+  --purple: #9a4cec;
+  --blue: #5345d8;
+  --indigo: #4c2884;
+  --purple-grad: linear-gradient(to right, var(--blue), var(--purple));
+}
+
+.blur-16 {
+  background: #fff8;
+  backdrop-filter: blur(16px);
+  --webkit-backdrop-filter: blur(16px);
+  --moz-backdrop-filter: blur(16px);
+}
+
+.blur-8 {
+  background: #fff8;
+  backdrop-filter: blur(8px);
+  --webkit-backdrop-filter: blur(8px);
+  --moz-backdrop-filter: blur(8px);
+}
+
+.bg-222 {
+  background: #222;
+  color: #fff !important;
+}
+
+.bg-fc3 {
+  background: var(--yellow);
+  color: #000;
+}
+
+svg {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #349;
+  text-decoration: underline;
+}

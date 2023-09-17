@@ -8,76 +8,23 @@
 
 	<link rel="stylesheet" href="/css/atomic.css">
 	<link rel="stylesheet" href="/css/frames.css">
-
-	<style>
-		/*
-			DONT REMOVE
-			1. These are global styles
-			2. OR soon to be updated to AtomiCSS
-		 */
-		:root {
-			--yellow-hl-rgb: 254, 196, 49;
-			--yellow-hl: #eb2;
-			--yellow: #fc3;
-			--purple-rgb: 154, 76, 236;
-			--purple: #9a4cec;
-			--blue: #5345d8;
-			--indigo: #4c2884;
-			--purple-grad: linear-gradient(to right, var(--blue), var(--purple));
-		}
-
-		.rx2,
-		.rx5,
-		.rx10,
-		.rx20 {
-			overflow: hidden;
-		}
-
-		.blur-16 {
-			background: #fff8;
-			backdrop-filter: blur(16px);
-			--webkit-backdrop-filter: blur(16px);
-			--moz-backdrop-filter: blur(16px);
-		}
-
-		.blur-8 {
-			background: #fff8;
-			backdrop-filter: blur(8px);
-			--webkit-backdrop-filter: blur(8px);
-			--moz-backdrop-filter: blur(8px);
-		}
-
-		.d-i {
-			display: inline;
-		}
-
-		.bg-222 {
-			background: #222;
-			color: #fff !important;
-		}
-
-		.bg-fc3 {
-			background: var(--yellow);
-			color: #000;
-		}
-	</style>
-
+	<link rel="stylesheet" href="/css/global.css">
 	<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_layout.9cca9f55.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/_page.e3a6dda8.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_layout.7cbcc507.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_page.f564f929.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/primary.ecb34dd6.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.b15f8dd5.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.2a736745.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.77aeed67.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.ea38cce1.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.eba59105.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.a977151e.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.ccbc7cc5.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.5300242a.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.41c905a7.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.bc1701e4.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/stores.f9af8670.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.34bc3876.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.a16adbda.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/state.2c52226e.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/recruit-page.svelte.8cdbc415.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/recruit-page.svelte.97f8c9bf.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/meta.655e5a23.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/primary.682bbe3e.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/candidate.84d7c987.js"><!-- HEAD_svelte-1fwdj2_START -->
@@ -106,18 +53,19 @@
 		
 
 
-<main class="app p-rel flow-x-h"><nav class="p-stx mx-a w-100 p-rel svelte-18b4uv9" style="z-index: 10;"><div class="nav d-b wait svelte-18b4uv9"><input type="checkbox" id="nav-check" class="svelte-18b4uv9">
-        <div class="nav-header d-i"><a href="/" class="nav-title d-ib svelte-18b4uv9"><img class="p-rel" src="/favicon.png" height="22px" width="22px" alt="" style="top:3px;">
+<main class="app p-rel flow-x-h"><nav class="p-stx mx-a w-100 p-rel svelte-1nowu63" style="z-index: 10;"><div class="nav d-b wait svelte-1nowu63"><input type="checkbox" id="nav-check" class="svelte-1nowu63">
+        <div class="nav-header d-i"><a href="/" class="nav-title d-ib svelte-1nowu63"><img class="p-rel" src="/favicon.png" height="22px" width="22px" alt="" style="top:3px;">
                 The Barabari Project
             </a></div>
-        <div class="nav-btn p-abs svelte-18b4uv9"><label for="nav-check" class="svelte-18b4uv9"><span class="svelte-18b4uv9"></span>
-                <span class="svelte-18b4uv9"></span>
-                <span class="svelte-18b4uv9"></span></label></div>
+        <div class="nav-btn p-abs svelte-1nowu63"><label for="nav-check" class="svelte-1nowu63"><span class="svelte-1nowu63"></span>
+                <span class="svelte-1nowu63"></span>
+                <span class="svelte-1nowu63"></span></label></div>
 
         
-        <div class="nav-links d-i svelte-18b4uv9"><a class="d-ib svelte-18b4uv9" href="/candidate">Get Mentorship
-                </a><a class="d-ib svelte-18b4uv9" href="/mentor">Be a Mentor
-                </a><a class="d-ib svelte-18b4uv9" href="/volunteer">Volunteer!
+        <div class="nav-links d-i svelte-1nowu63"><a class="d-ib svelte-1nowu63" href="/candidate">Get Mentorship
+                </a><a class="d-ib svelte-1nowu63" href="/mentor">Be a Mentor
+                </a><a class="d-ib svelte-1nowu63" href="/volunteer">Volunteer!
+                </a><a class="d-ib svelte-1nowu63" href="/donate">Donate
                 </a></div></div></nav>
 
 
@@ -165,31 +113,31 @@
     <h1 class="m0 p20 bg-fc3 svelte-1641cbt">
         Recruit from Us!</h1>
     <div class="limit mx-a svelte-1641cbt"></div>
-    <div class="mx-a"><div class="hero f fw w-100 svelte-1nvpmha" slot="max"><div class="lhs f fw svelte-1nvpmha"><div class="cell f-col tc j-ct svelte-1nvpmha"><div class="tl f-col p20"><img class="rpm-5 svelte-1nvpmha" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/gear.svg" alt="" height="32" width="32" style="background: #fc38;">
+    <div class="mx-a"><div class="hero f fw w-100 svelte-easq8i" slot="max"><div class="lhs f fw svelte-easq8i"><div class="cell f-col tc j-ct svelte-easq8i"><div class="tl f-col p20"><img class="rpm-5 svelte-easq8i" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/gear.svg" alt="" height="32" width="32" style="background: #fc38;">
                         <p><span class="fw7">Our Process</span> <br>
                             We provide candidates with personalized 1-on-1 mentoring over a period of 6-8 months to help them gain expertise in their chosen field
                         </p></div>
-                </div><div class="cell f-col tc j-ct svelte-1nvpmha"><div class="tl f-col p20"><img class="rpm-5 svelte-1nvpmha" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/user.svg" alt="" height="32" width="32" style="background: #fc38;">
+                </div><div class="cell f-col tc j-ct svelte-easq8i"><div class="tl f-col p20"><img class="rpm-5 svelte-easq8i" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/user.svg" alt="" height="32" width="32" style="background: #fc38;">
                         <p><span class="fw7">Mentors</span> <br>
                             Our mentorship community comprises IIT/BITS alumni and tech professionals from Google, Adobe, and Amazon
                         </p></div>
-                </div><div class="cell f-col tc j-ct svelte-1nvpmha"><div class="tl f-col p20"><img class="rpm-5 svelte-1nvpmha" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/book.svg" alt="" height="32" width="32" style="background: #fc38;">
+                </div><div class="cell f-col tc j-ct svelte-easq8i"><div class="tl f-col p20"><img class="rpm-5 svelte-easq8i" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/book.svg" alt="" height="32" width="32" style="background: #fc38;">
                         <p><span class="fw7">Mentorship Technologies</span> <br>
                             We help candidates build a basic to advanced understanding of DSA (Java/C++), Web Dev (React), and Data Analytics (SQL, Python, and Power BI)
                         </p></div>
-                </div><div class="cell f-col tc j-ct svelte-1nvpmha"><div class="tl f-col p20"><img class="rpm-5 svelte-1nvpmha" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/check.svg" alt="" height="32" width="32" style="background: #fc38;">
+                </div><div class="cell f-col tc j-ct svelte-easq8i"><div class="tl f-col p20"><img class="rpm-5 svelte-easq8i" src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/check.svg" alt="" height="32" width="32" style="background: #fc38;">
                         <p><span class="fw7">Past Record</span> <br>
                             We have successfully mentored and created a job referral network for 25+ underprivileged candidates across 4 states
                         </p></div>
                 </div></div>
-        <div class="rhs p-rel svelte-1nvpmha"><img src="/_app/immutable/assets/candidate.98938f0c.webp" alt="" class="w-100 p-abs z-0 h-100 svelte-1nvpmha" style="top:0;left:0;">
+        <div class="rhs p-rel svelte-easq8i"><img src="/_app/immutable/assets/candidate.98938f0c.webp" alt="" class="w-100 p-abs z-0 h-100 svelte-easq8i" style="top:0;left:0;">
             <div class="clearfix w-100 h-100 f-col tc j-ct" style="top:0;left:0;background:#fff4;z-index:1"><a href="https://docs.google.com/document/d/1yREF25R3NRavN3GQ7vBQMWeJ3yjUdn44vU-hmyH6U8o/
         " target="_blank" rel="noreferrer" class="blur-8 w-66 fw4 tc mx-a p20 p-rel f j-ar" style="font-size: 1.5em; background:#fff4;"><div style="align-self:center;">Get In Touch!</div>
-                    <svg viewBox="0 0 32 32" height="48" class="svelte-1nvpmha"><path d="M11 29 24 16 11 3"></path></svg></a></div></div></div></div>
+                    <svg viewBox="0 0 32 32" height="48" class="svelte-easq8i"><path d="M11 29 24 16 11 3"></path></svg></a></div></div></div></div>
 </div></div>
 
     <footer class="p10 w-100 tc bg-fc3 svelte-y97mz9"><div class="mx-a" style="max-width: 300px;"><div class="fw4" style="font-size:2rem;">The Barabari Project</div>
-            <div class="p10" style="font-size:1.1em"><i>Universal Access To Quality Jobs</i></div>
+            <div class="p10" style="font-size:1.1em"><i>Universal Access To Tech Education</i> <br></div>
             <div class="f j-ar"><a href="mailto:thebarabariproject@gmail.com" class="p5"><img class="rx5 icon svelte-y97mz9" height="36px" width="36px" src="/icons/gmail.svg" alt="GMail">
                     </a><a href="https://www.instagram.com/thebarabariproject/" class="p5"><img class="rx5 icon svelte-y97mz9" height="36px" width="36px" src="/icons/insta.svg" alt="Instagram">
                     </a><a href="https://twitter.com/BarabariProject" class="p5"><img class="rx5 icon svelte-y97mz9" height="36px" width="36px" src="/icons/twitter.svg" alt="Twitter">
@@ -201,7 +149,7 @@
 			
 			<script>
 				{
-					__sveltekit_16dayse = {
+					__sveltekit_1a261bs = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -211,8 +159,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.b15f8dd5.js"),
-						import("./_app/immutable/entry/app.ccbc7cc5.js")
+						import("./_app/immutable/entry/start.2a736745.js"),
+						import("./_app/immutable/entry/app.5300242a.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 7],
