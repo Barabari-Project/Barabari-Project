@@ -45,3 +45,7 @@ a:hover {
   color: #349;
   text-decoration: underline;
 }
+
+.flow-h {
+  overflow: hidden;
+}
