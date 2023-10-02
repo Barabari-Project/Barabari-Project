@@ -9,43 +9,60 @@
 	<link rel="stylesheet" href="/css/atomic.css">
 	<link rel="stylesheet" href="/css/frames.css">
 	<link rel="stylesheet" href="/css/global.css">
+
+	<link rel="preconnect" href="https://bbs.barabariproject.org">
+
+	<script>
+		if ( location.hostname === "localhost" ) {
+			String.prototype.d = function () {
+				console.log( "🟢 ", this );
+				return this;
+			};
+			Object.prototype.d = function () {
+				console.log( "🟢 ", this );
+				return this;
+			};
+		}
+	</script>
+
 	<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout.4e75d806.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/_layout.bbdeafb5.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/_page.b70f141f.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.8ad2f60c.js">
+		<link href="../_app/immutable/assets/_layout.241511ef.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_layout.c9218821.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page.b0e27b3f.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.efd41e91.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.77aeed67.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.e7d625ce.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.76dee2cd.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.a977151e.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.c16823f0.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.a95af3b2.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.c856fdab.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/stores.3d963d63.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.b1f3b73f.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.0c43232b.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/state.2c52226e.js">
 		<link rel="modulepreload" href="../_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/resources-layout.svelte.ac551752.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/resources-_slug_-page.svelte.8a4a55f4.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/resources-layout.svelte.d32412e2.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/resources-_slug_-page.svelte.65569ad7.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/meta.655e5a23.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/resources-_slug_-page.ts.684d2af5.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page.12568ea4.js"><title>DSA Guide</title><!-- HEAD_svelte-38ksxd_START -->
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.c61b1aa5.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/resources-_slug_-page.ts.a939bd73.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page.4c009f47.js"><title>DSA Guide</title><!-- HEAD_svelte-38ksxd_START -->
 <title>DSA Guide | The Barabari Project</title>
 <meta name="title" content="DSA Guide | The Barabari Project">
-<meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos, quia amet harum deserunt debitis consequatur a ipsum in eaque at">
+<meta name="description" content="A basic roadmap for Data Structures and Algorithms covering all the important topics needed for every Software Engineer">
 <link rel="canonical" href="https://barabariproject.org/">
 
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://barabariproject.org/">
 <meta property="og:title" content="DSA Guide | The Barabari Project">
-<meta property="og:description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos, quia amet harum deserunt debitis consequatur a ipsum in eaque at">
+<meta property="og:description" content="A basic roadmap for Data Structures and Algorithms covering all the important topics needed for every Software Engineer">
 <meta property="og:image" content="https://barabariproject.org//favicon.png">
 
 
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://barabariproject.org/">
 <meta property="twitter:title" content="DSA Guide | The Barabari Project">
-<meta property="twitter:description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos, quia amet harum deserunt debitis consequatur a ipsum in eaque at">
+<meta property="twitter:description" content="A basic roadmap for Data Structures and Algorithms covering all the important topics needed for every Software Engineer">
 <meta property="twitter:image" content="https://barabariproject.org//favicon.png"><!-- HEAD_svelte-38ksxd_END -->
 </head>
 
@@ -54,19 +71,19 @@
 		
 
 
-<main class="app p-rel flow-x-h"><nav class="p-stx mx-a w-100 p-rel svelte-1rfp1dj" style="z-index: 10;"><div class="nav d-b wait svelte-1rfp1dj"><input type="checkbox" id="nav-check" class="svelte-1rfp1dj">
-        <div class="nav-header d-i"><a href="/" class="nav-title d-ib svelte-1rfp1dj"><img class="p-rel" src="/favicon.png" height="22px" width="22px" alt="" style="top:3px;">
+<main class="app p-rel flow-x-h"><nav class="p-stx mx-a w-100 p-rel svelte-1j8il2v" style="z-index: 10;"><div class="nav d-b wait svelte-1j8il2v"><input type="checkbox" id="nav-check" class="svelte-1j8il2v">
+        <div class="nav-header d-i"><a href="/" class="nav-title d-ib svelte-1j8il2v"><img class="p-rel" src="/favicon.png" height="22px" width="22px" alt="" style="top:3px;">
                 The Barabari Project
             </a></div>
-        <div class="nav-btn p-abs svelte-1rfp1dj"><label for="nav-check" class="svelte-1rfp1dj"><span class="svelte-1rfp1dj"></span>
-                <span class="svelte-1rfp1dj"></span>
-                <span class="svelte-1rfp1dj"></span></label></div>
+        <div class="nav-btn p-abs svelte-1j8il2v"><label for="nav-check" class="svelte-1j8il2v"><span class="svelte-1j8il2v"></span>
+                <span class="svelte-1j8il2v"></span>
+                <span class="svelte-1j8il2v"></span></label></div>
 
         
-        <div class="nav-links d-i svelte-1rfp1dj"><a class="d-ib svelte-1rfp1dj" href="/candidate">Get Mentorship
-                </a><a class="d-ib svelte-1rfp1dj" href="/mentor">Be a Mentor
-                </a><a class="d-ib svelte-1rfp1dj" href="/volunteer">Volunteer!
-                </a><a class="d-ib svelte-1rfp1dj" href="/donate">Donate
+        <div class="nav-links d-i svelte-1j8il2v"><a class="d-ib svelte-1j8il2v" href="/candidate">Get Mentorship
+                </a><a class="d-ib svelte-1j8il2v" href="/mentor">Be a Mentor
+                </a><a class="d-ib svelte-1j8il2v" href="/volunteer">Volunteer!
+                </a><a class="d-ib svelte-1j8il2v" href="/donate">Donate
                 </a></div></div></nav>
 
 
@@ -106,15 +123,15 @@
     
     <div id="content" style="z-index: 1;" class="svelte-qhxw8a">
 
-<div class="w-100 f j-ct"><article class="blur-fff8 rx10 p10 mx-a flow-h svelte-1woh59k"><header class="d-b" style="margin: 3rem 0 2rem 0;"><h1 class="m0">DSA Guide</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos, quia amet harum deserunt debitis consequatur a ipsum in eaque at</p></header>
+<div class="w-100 f j-ct"><article class="blur-fff8 rx10 p10 mx-a flow-h svelte-14ky5dr"><header class="f svelte-14ky5dr" style="margin: 3rem 0 2rem 0;"><div class="f j-ct al-ct"><img height="60px" width="60px" class="icon svelte-14ky5dr" src="https://bbs.barabariproject.org/i1/fas:sitemap" alt=""></div>
+      <div><h3 class="m0">DSA Guide</h3>
+        <p style="margin: 5px 0 0 0;">A basic roadmap for Data Structures and Algorithms covering all the important topics needed for every Software Engineer</p></div></header>
     <hr>
 
     
 
     
-    <h1>DSA</h1>
-<h2>Basics of Language</h2>
+    <h2>Basics of Language</h2>
 <details><summary class="heading">Basics of C++
 </summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=yGB9jhsEsr8&t=20s&ab_channel=CodeWithHarry" process="dsa">https://www.youtube.com/watch?v=yGB9jhsEsr8&amp;t=20s&amp;ab_channel=CodeWithHarry</a></li>
 <li><a href="https://geeksforgeeks.org/cpp-programming-basics/" process="dsa">https://geeksforgeeks.org/cpp-programming-basics/</a></li></ul></div></details>
@@ -380,8 +397,7 @@
 <li><a href="https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-linked-list/" process="dsa">https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-linked-list/</a> <a href="https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-linked-list/" rel="nofollow">https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-linked-list/</a></li>
 <li><a href="https://geeksforgeeks.org/linked-list-vs-array/" process="dsa">https://geeksforgeeks.org/linked-list-vs-array/</a></li>
 <li><a href="https://www.youtube.com/watch?v=48uzKhtyEvI&ab_channel=Telusko" process="dsa">https://www.youtube.com/watch?v=48uzKhtyEvI&amp;ab_channel=Telusko</a></li>
-<li><a href="https://stackoverflow.com/questions/393556/when-to-use-a-linked-list-over-an-array-array-list" process="dsa">https://stackoverflow.com/questions/393556/when-to-use-a-linked-list-over-an-array-array-list</a></li>
-<li><a href="https://www.reddit.com/r/learnprogramming/comments/15mxrt/what_are_the_real_world_applications_of_linked/" process="dsa">https://www.reddit.com/r/learnprogramming/comments/15mxrt/what_are_the_real_world_applications_of_linked/</a></li></ul></div></details>
+<li><a href="https://stackoverflow.com/questions/393556/when-to-use-a-linked-list-over-an-array-array-list" process="dsa">https://stackoverflow.com/questions/393556/when-to-use-a-linked-list-over-an-array-array-list</a></li></ul></div></details>
 <details><summary class="heading">Details of Linked Lists
 </summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=4tU7d0TTiZQ&ab_channel=AnujBhaiya" process="dsa">https://www.youtube.com/watch?v=4tU7d0TTiZQ&amp;ab_channel=AnujBhaiya</a></li>
 <li><a href="https://www.programiz.com/dsa/linked-list-operations" process="dsa">https://www.programiz.com/dsa/linked-list-operations</a></li>
@@ -429,8 +445,7 @@
 <li><a href="https://www.geeksforgeeks.org/delete-every-kth-node-from-circular-linked-list/" process="dsa">https://www.geeksforgeeks.org/delete-every-kth-node-from-circular-linked-list/</a></li>
 <li><a href="https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/" process="dsa">https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/</a></li></ul></div></details>
 <details><summary class="heading">Practice 2: Linked List Quiz
-</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/data-structure-gq/top-mcqs-on-linked-list-data-structure-with-answers/" process="dsa">https://www.geeksforgeeks.org/data-structure-gq/top-mcqs-on-linked-list-data-structure-with-answers/</a></li>
-<li><a href="https://quizizz.com/admin/quiz/5f336be71f3fd4001bf66c69/linked-lists" process="dsa">https://quizizz.com/admin/quiz/5f336be71f3fd4001bf66c69/linked-lists</a></li></ul></div></details>
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/data-structure-gq/top-mcqs-on-linked-list-data-structure-with-answers/" process="dsa">https://www.geeksforgeeks.org/data-structure-gq/top-mcqs-on-linked-list-data-structure-with-answers/</a></li></ul></div></details>
 <details><summary class="heading">Practice 3: Linked List Extra Questions
 </summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/exchange-first-last-node-circular-linked-list/" process="dsa">https://www.geeksforgeeks.org/exchange-first-last-node-circular-linked-list/</a></li>
 <li><a href="https://www.geeksforgeeks.org/reverse-a-doubly-linked-list/" process="dsa">https://www.geeksforgeeks.org/reverse-a-doubly-linked-list/</a></li>
@@ -450,11 +465,8 @@
 <details><summary class="heading">Min Stack &amp; Questions
 </summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/design-a-stack-that-supports-getmin-in-o1-time-and-o1-extra-space/" process="dsa">https://www.geeksforgeeks.org/design-a-stack-that-supports-getmin-in-o1-time-and-o1-extra-space/</a></li>
 <li><a href="https://www.hackerrank.com/challenges/maximum-element/problem" process="dsa">https://www.hackerrank.com/challenges/maximum-element/problem</a></li></ul></div></details>
-<details><summary class="heading">BODMAS
-</summary><div class="wrapped"><ul><li><a href="https://thirdspacelearning.com/blog/what-is-bodmas/" process="dsa">https://thirdspacelearning.com/blog/what-is-bodmas/</a></li></ul></div></details>
 <details><summary class="heading">Infix / Prefix / Postfix
-</summary><div class="wrapped"><ul><li><a href="https://www.baeldung.com/cs/infix-prefix-postfix#:~:text=The%20infix%20notation%20uses%20parentheses,are%20appropriate%20for%20particular%20applications" process="dsa">https://www.baeldung.com/cs/infix-prefix-postfix#:~:text=The%20infix%20notation%20uses%20parentheses,are%20appropriate%20for%20particular%20applications</a>.</li>
-<li><a href="https://www.youtube.com/watch?v=6T3jMNUCRNU&ab_channel=ApnaCollege" process="dsa">https://www.youtube.com/watch?v=6T3jMNUCRNU&amp;ab_channel=ApnaCollege</a></li>
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=6T3jMNUCRNU&ab_channel=ApnaCollege" process="dsa">https://www.youtube.com/watch?v=6T3jMNUCRNU&amp;ab_channel=ApnaCollege</a></li>
 <li><a href="https://www.youtube.com/watch?v=MuF5p8-oWc8&list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ&index=74&ab_channel=ApnaCollege" process="dsa">https://www.youtube.com/watch?v=MuF5p8-oWc8&amp;list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ&amp;index=74&amp;ab_channel=ApnaCollege</a></li>
 <li><a href="https://www.youtube.com/watch?v=5B6jw4wOJR0&list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ&index=75&ab_channel=ApnaCollege" process="dsa">https://www.youtube.com/watch?v=5B6jw4wOJR0&amp;list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ&amp;index=75&amp;ab_channel=ApnaCollege</a></li>
 <li><a href="https://www.youtube.com/watch?v=mg9yi6YuAVk&list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ&index=76&ab_channel=ApnaCollege" process="dsa">https://www.youtube.com/watch?v=mg9yi6YuAVk&amp;list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ&amp;index=76&amp;ab_channel=ApnaCollege</a></li>
@@ -486,7 +498,6 @@
 <details><summary class="heading">Practice 1: Queues
 </summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/design-circular-deque/" process="dsa">https://leetcode.com/problems/design-circular-deque/</a></li>
 <li><a href="https://leetcode.com/problems/design-circular-queue/" process="dsa">https://leetcode.com/problems/design-circular-queue/</a></li>
-<li><a href="https://afteracademy.com/blog/sliding-window-maximum/" process="dsa">https://afteracademy.com/blog/sliding-window-maximum/</a></li>
 <li><a href="https://leetcode.com/problems/sliding-window-maximum/" process="dsa">https://leetcode.com/problems/sliding-window-maximum/</a></li>
 <li><a href="https://leetcode.com/problems/jump-game-vi/" process="dsa">https://leetcode.com/problems/jump-game-vi/</a></li></ul></div></details>
 <h2>Trees</h2>
@@ -497,8 +508,7 @@
 <a href="https://www.geeksforgeeks.org/introduction-to-binary-tree-data-structure-and-algorithm-tutorials/" rel="nofollow">https://www.geeksforgeeks.org/introduction-to-binary-tree-data-structure-and-algorithm-tutorials/</a>
 <a href="https://www.geeksforgeeks.org/binary-tree-array-implementation/#:~:text=Given%20an%20array%20that%20represents,is%20no%20parent%20for%20root" rel="nofollow">https://www.geeksforgeeks.org/binary-tree-array-implementation/#:~:text=Given%20an%20array%20that%20represents,is%20no%20parent%20for%20root</a>.</li></ul></div></details>
 <details><summary class="heading">Complete and Full Binary Tree
-</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/difference-between-full-and-complete-binary-tree/" process="dsa">https://www.geeksforgeeks.org/difference-between-full-and-complete-binary-tree/</a></li>
-<li><a href="https://web.cecs.pdx.edu/~sheard/course/Cs163/Doc/FullvsComplete.html" process="dsa">https://web.cecs.pdx.edu/~sheard/course/Cs163/Doc/FullvsComplete.html</a></li></ul></div></details>
+</summary><div class="wrapped"><ul><li><a href="https://www.geeksforgeeks.org/difference-between-full-and-complete-binary-tree/" process="dsa">https://www.geeksforgeeks.org/difference-between-full-and-complete-binary-tree/</a></li></ul></div></details>
 <details><summary class="heading">Binary Tree Traversal
 </summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=gm8DUJJhmY4&ab_channel=mycodeschool" process="dsa">https://www.youtube.com/watch?v=gm8DUJJhmY4&amp;ab_channel=mycodeschool</a></li>
 <li><a href="https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/" process="dsa">https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/</a></li></ul>
@@ -599,8 +609,7 @@
 <li><a href="https://www.interviewbit.com/problems/meeting-rooms/" process="dsa">https://www.interviewbit.com/problems/meeting-rooms/</a></li></ul></div></details>
 <h2>Greedy</h2>
 <details><summary class="heading">Introduction
-</summary><div class="wrapped"><ul><li><a href="https://emre.me/algorithms/greedy-algorithms/" process="dsa">https://emre.me/algorithms/greedy-algorithms/</a></li>
-<li><a href="https://www.youtube.com/watch?v=HZOUwKCKF5o&ab_channel=CodeHelp-byBabbar" process="dsa">https://www.youtube.com/watch?v=HZOUwKCKF5o&amp;ab_channel=CodeHelp-byBabbar</a></li>
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=HZOUwKCKF5o&ab_channel=CodeHelp-byBabbar" process="dsa">https://www.youtube.com/watch?v=HZOUwKCKF5o&amp;ab_channel=CodeHelp-byBabbar</a></li>
 <li><a href="https://www.youtube.com/watch?v=ARvQcqJ_-NY&ab_channel=AbdulBari" process="dsa">https://www.youtube.com/watch?v=ARvQcqJ_-NY&amp;ab_channel=AbdulBari</a></li></ul></div></details>
 <details><summary class="heading">Types Of Greedy Problems
 </summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=oTTzNMHM05I&ab_channel=AbdulBari" process="dsa">https://www.youtube.com/watch?v=oTTzNMHM05I&amp;ab_channel=AbdulBari</a></li>
@@ -650,8 +659,7 @@
 <li><a href="https://www.youtube.com/watch?v=mVmXwFkgoJ0&ab_channel=GeeksforGeeks" process="dsa">https://www.youtube.com/watch?v=mVmXwFkgoJ0&amp;ab_channel=GeeksforGeeks</a></li>
 <li><a href="https://leetcode.com/problems/is-graph-bipartite/" process="dsa">https://leetcode.com/problems/is-graph-bipartite/</a></li></ul></div></details>
 <details><summary class="heading">Connected Components in Graph
-</summary><div class="wrapped"><ul><li><a href="https://www.baeldung.com/cs/graph-connected-components" process="dsa">https://www.baeldung.com/cs/graph-connected-components</a></li>
-<li><a href="https://www.youtube.com/watch?v=I6v0itcISSY&t=89s&ab_channel=takeUforward" process="dsa">https://www.youtube.com/watch?v=I6v0itcISSY&amp;t=89s&amp;ab_channel=takeUforward</a></li>
+</summary><div class="wrapped"><ul><li><a href="https://www.youtube.com/watch?v=I6v0itcISSY&t=89s&ab_channel=takeUforward" process="dsa">https://www.youtube.com/watch?v=I6v0itcISSY&amp;t=89s&amp;ab_channel=takeUforward</a></li>
 <li><a href="https://leetcode.com/problems/number-of-provinces/" process="dsa">https://leetcode.com/problems/number-of-provinces/</a></li></ul></div></details>
 <details><summary class="heading">Practice 2: Graphs
 </summary><div class="wrapped"><ul><li><a href="https://leetcode.com/problems/number-of-operations-to-make-network-connected/" process="dsa">https://leetcode.com/problems/number-of-operations-to-make-network-connected/</a></li></ul></div></details>
@@ -682,18 +690,18 @@
 			
 			<script>
 				{
-					__sveltekit_wpxkbe = {
+					__sveltekit_iaje28 = {
 						base: new URL("..", location).pathname.slice(0, -1),
 						env: {}
 					};
 
 					const element = document.currentScript.parentElement;
 
-					const data = [null,null,{"type":"data","data":{post:{title:"DSA Guide",desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos, quia amet harum deserunt debitis consequatur a ipsum in eaque at",draft:false,slug:"dsa"}},"uses":{"params":["slug"],"url":1}}];
+					const data = [null,null,{"type":"data","data":{post:{title:"DSA Guide",desc:"A basic roadmap for Data Structures and Algorithms covering all the important topics needed for every Software Engineer",icon:"fas:sitemap",draft:false,slug:"dsa"}},"uses":{"params":["slug"],"url":1}}];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.8ad2f60c.js"),
-						import("../_app/immutable/entry/app.c16823f0.js")
+						import("../_app/immutable/entry/start.efd41e91.js"),
+						import("../_app/immutable/entry/app.a95af3b2.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2, 9],

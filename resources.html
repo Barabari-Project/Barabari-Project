@@ -9,25 +9,42 @@
 	<link rel="stylesheet" href="/css/atomic.css">
 	<link rel="stylesheet" href="/css/frames.css">
 	<link rel="stylesheet" href="/css/global.css">
+
+	<link rel="preconnect" href="https://bbs.barabariproject.org">
+
+	<script>
+		if ( location.hostname === "localhost" ) {
+			String.prototype.d = function () {
+				console.log( "🟢 ", this );
+				return this;
+			};
+			Object.prototype.d = function () {
+				console.log( "🟢 ", this );
+				return this;
+			};
+		}
+	</script>
+
 	<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_layout.4e75d806.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/_layout.bbdeafb5.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/_page.1694c8eb.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_layout.241511ef.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_layout.c9218821.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_page.f5d0925b.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/primary.fdeb4c00.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.8ad2f60c.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.efd41e91.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.77aeed67.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.e7d625ce.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.76dee2cd.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.a977151e.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.c16823f0.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.a95af3b2.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.41c905a7.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.c856fdab.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/stores.3d963d63.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.b1f3b73f.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.0c43232b.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/state.2c52226e.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/resources-layout.svelte.ac551752.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/resources-page.svelte.d33e4f03.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/resources-layout.svelte.d32412e2.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/resources-page.svelte.84236a0f.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/primary.91aa7369.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.c61b1aa5.js">
 </head>
 
 <body xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -35,19 +52,19 @@
 		
 
 
-<main class="app p-rel flow-x-h"><nav class="p-stx mx-a w-100 p-rel svelte-1rfp1dj" style="z-index: 10;"><div class="nav d-b wait svelte-1rfp1dj"><input type="checkbox" id="nav-check" class="svelte-1rfp1dj">
-        <div class="nav-header d-i"><a href="/" class="nav-title d-ib svelte-1rfp1dj"><img class="p-rel" src="/favicon.png" height="22px" width="22px" alt="" style="top:3px;">
+<main class="app p-rel flow-x-h"><nav class="p-stx mx-a w-100 p-rel svelte-1j8il2v" style="z-index: 10;"><div class="nav d-b wait svelte-1j8il2v"><input type="checkbox" id="nav-check" class="svelte-1j8il2v">
+        <div class="nav-header d-i"><a href="/" class="nav-title d-ib svelte-1j8il2v"><img class="p-rel" src="/favicon.png" height="22px" width="22px" alt="" style="top:3px;">
                 The Barabari Project
             </a></div>
-        <div class="nav-btn p-abs svelte-1rfp1dj"><label for="nav-check" class="svelte-1rfp1dj"><span class="svelte-1rfp1dj"></span>
-                <span class="svelte-1rfp1dj"></span>
-                <span class="svelte-1rfp1dj"></span></label></div>
+        <div class="nav-btn p-abs svelte-1j8il2v"><label for="nav-check" class="svelte-1j8il2v"><span class="svelte-1j8il2v"></span>
+                <span class="svelte-1j8il2v"></span>
+                <span class="svelte-1j8il2v"></span></label></div>
 
         
-        <div class="nav-links d-i svelte-1rfp1dj"><a class="d-ib svelte-1rfp1dj" href="/candidate">Get Mentorship
-                </a><a class="d-ib svelte-1rfp1dj" href="/mentor">Be a Mentor
-                </a><a class="d-ib svelte-1rfp1dj" href="/volunteer">Volunteer!
-                </a><a class="d-ib svelte-1rfp1dj" href="/donate">Donate
+        <div class="nav-links d-i svelte-1j8il2v"><a class="d-ib svelte-1j8il2v" href="/candidate">Get Mentorship
+                </a><a class="d-ib svelte-1j8il2v" href="/mentor">Be a Mentor
+                </a><a class="d-ib svelte-1j8il2v" href="/volunteer">Volunteer!
+                </a><a class="d-ib svelte-1j8il2v" href="/donate">Donate
                 </a></div></div></nav>
 
 
@@ -89,8 +106,10 @@
     <h1 class="m0 p20 bg-fc3 svelte-1p8qrzw"><br>
         Find out more!</h1>
     <div class="limit flow-h mx-a svelte-1p8qrzw"></div>
-    <div class="mx-a"><section class="mx-a w-100 svelte-1lnisw9" slot="max"><a class="d-b svelte-1lnisw9" href="/resources/dsa"><h3 class="svelte-1lnisw9">DSA Guide</h3>
-        <p style="margin-bottom: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos, quia amet harum deserunt debitis consequatur a ipsum in eaque at</p>
+    <div class="mx-a"><section class="mx-a w-100 svelte-aheao6" slot="max"><a class="d-b p20 m10 rx20 svelte-aheao6" href="/resources/dsa"><div class="f"><div class="f j-ct al-ct"><img height="60px" width="60px" class="icon svelte-aheao6" src="https://bbs.barabariproject.org/i1/fas:sitemap" alt=""></div>
+          <div><h3 class="svelte-aheao6">DSA Guide</h3>
+            <p style="margin: 5px 0 0 0;">A basic roadmap for Data Structures and Algorithms covering all the important topics needed for every Software Engineer</p>
+          </div></div>
       </a></section></div>
 </div></div>
 
@@ -107,18 +126,18 @@
 			
 			<script>
 				{
-					__sveltekit_wpxkbe = {
+					__sveltekit_iaje28 = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
 					};
 
 					const element = document.currentScript.parentElement;
 
-					const data = [null,null,{"type":"data","data":{posts:[{title:"DSA Guide",desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos, quia amet harum deserunt debitis consequatur a ipsum in eaque at",draft:false,slug:"dsa"}]},"uses":{"url":1}}];
+					const data = [null,null,{"type":"data","data":{posts:[{title:"DSA Guide",desc:"A basic roadmap for Data Structures and Algorithms covering all the important topics needed for every Software Engineer",icon:"fas:sitemap",draft:false,slug:"dsa"}]},"uses":{"url":1}}];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.8ad2f60c.js"),
-						import("./_app/immutable/entry/app.c16823f0.js")
+						import("./_app/immutable/entry/start.efd41e91.js"),
+						import("./_app/immutable/entry/app.a95af3b2.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2, 8],
