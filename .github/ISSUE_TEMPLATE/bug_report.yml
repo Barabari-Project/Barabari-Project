@@ -1,0 +1,52 @@
+name: "\U0001F41E Bug report"
+description: Report an issue with Barabari Website
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is. Add Expected Behavior if possible/applicable
+      placeholder: Bug description
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Provide a way to reproduce the issue. Please try to add meaningful reproductions where applicable, things like "Open Website" are not helpful. In such cases just write N/A. I can't fix what I can't reproduce. If it is device/config specific please provide screenshots
+      placeholder: Reproduction
+    validations:
+      required: true
+  - type: textarea
+    id: system-info
+    attributes:
+      label: System Info
+      description: Some basic info about your Browser, OS, Device etc.
+      render: shell
+      placeholder: System, Binaries, Browsers
+    validations:
+      required: true
+  - type: textarea
+    id: comments
+    attributes:
+      label: Comments
+      description: Anything else to keep in mind?
+      placeholder: Any additional context...
+    validations:
+      required: false
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: Select the severity of this issue
+      options:
+        - annoyance (low priority)
+        - minor impact (medium priority)
+        - critical (high priority)
+    validations:
+      required: true

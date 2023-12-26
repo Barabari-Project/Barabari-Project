@@ -1,0 +1,60 @@
+details {
+  border-radius: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid #ccc8;
+  overflow: hidden;
+}
+
+details summary {
+  background: #222;
+  cursor: pointer;
+  padding: 10px;
+  transition: background 0.3s ease;
+}
+
+details summary:hover {
+  background: #333;
+}
+
+details *:not(summary) {
+  padding: 10px;
+}
+
+details *:not(summary) * {
+  padding: unset;
+}
+
+
+
+/* <a href='&url;' class='link d-b f rx10 m5' target='_blank'>
+    <img src='&icon;' class='icon'/>
+    <div class='body p10'>
+      <h3 class='title'>&title;</h3>
+      <p class='desc'>&desc;</p>
+    </div>
+  </a> */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.link {
+  border: 1px solid #ccc;
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.link .title {
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+.link>img {
+  height: 150px;
+  width: 150px;
+}

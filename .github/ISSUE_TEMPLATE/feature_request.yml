@@ -1,0 +1,41 @@
+name: "🚀 Feature Request"
+description: "Suggest a new feature for Barabari Website"
+labels: ['feature']
+body:
+  - type: markdown
+    attributes:
+      value: Please make sure to browse the opened and closed issues to make sure that this idea has not previously been discussed.
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Describe the feature
+      description: A clear and concise description of the feature you're suggesting.
+      placeholder: Feature description
+    validations:
+      required: true
+  - type: checkboxes  # New field
+    id: behind-demo-flag
+    attributes:
+      label: Configuration
+      options:
+        - label: This is a demo
+        - label: Platform Specific
+      description: Check boxes as applicable
+    validations:
+      required: false
+  - type: textarea
+    id: alts
+    attributes:
+      label: Alternatives Considered
+      description: Describe alternatives you've considered
+      placeholder: I looked at the tools abc and xyz
+    validations:
+      required: true
+  - type: textarea
+    id: comments
+    attributes:
+      label: Comments
+      description: Additional context
+      placeholder: comments
+    validations:
+      required: false

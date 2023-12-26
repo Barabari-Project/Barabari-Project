@@ -1,0 +1,152 @@
+.fade-out {
+    --delay: 0s;
+    will-change: opacity;
+    animation: fade .4s ease-in backwards;
+    animation-delay: var(--delay);
+}
+
+.wait {
+    --delay: 0s;
+    animation-delay: var(--delay);
+}
+
+.fade {
+    --delay: 0s;
+    will-change: opacity;
+    animation: fade .4s ease-in forwards;
+    animation-delay: var(--delay);
+}
+
+.fade-right {
+    --delay: 0s;
+    will-change: opacity, transform;
+    animation: fade-right .4s ease-in forwards;
+    animation-delay: var(--delay);
+}
+
+.fade-left {
+    --delay: 0s;
+    will-change: opacity, transform;
+    animation: fade-left .4s ease-in forwards;
+    animation-delay: var(--delay);
+}
+
+.fade-down {
+    --delay: 0s;
+    will-change: opacity, transform;
+    animation: fade-down .4s ease-in forwards;
+    animation-delay: var(--delay);
+}
+
+.fade-up {
+    --delay: 0s;
+    will-change: opacity, transform;
+    animation: fade-up .4s ease-in forwards;
+    animation-delay: var(--delay);
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(-10px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(10px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+@keyframes fade-down {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        transform: translateY(10px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+@keyframes wobble {
+    0% {
+        transform: translateX(0%);
+    }
+
+    10% {
+        transform: translateX(0%);
+    }
+
+    15% {
+        transform: translateX(-20%) rotate(-4deg);
+    }
+
+    30% {
+        transform: translateX(15%) rotate(3deg);
+    }
+
+    45% {
+        transform: translateX(-10%) rotate(-3deg);
+    }
+
+    60% {
+        transform: translateX(5%) rotate(2deg);
+    }
+
+    75% {
+        transform: translateX(-2%) rotate(-1deg);
+    }
+
+    90% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.desktop-only {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .desktop-only {
+        display: none;
+    }
+}
