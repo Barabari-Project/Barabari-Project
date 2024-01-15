@@ -2,37 +2,6 @@
     import Meta from "../../components/meta.svelte";
     import Layout from "$layout/primary.svelte";
     import Background from "../../../static/images/hero/mentor.jpg?w=1080&h=610&fit=cover&webp";
-    import Testimonials from "../../components/testimonials.svelte";
-    import { isDemo } from "$lib/state";
-
-    let demo = $isDemo;
-
-    let monials = [
-        {
-            title: "Section 1",
-            content:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate, quibusdam voluptatum, voluptatibus, quos dolorum",
-            icon: "https://picsum.photos/900/900",
-        },
-        {
-            title: "Section 2",
-            content:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate, quibusdam voluptatum, voluptatibus, quos dolorum",
-            icon: "https://picsum.photos/900/901",
-        },
-        {
-            title: "Section 3",
-            content:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate, quibusdam voluptatum, voluptatibus, quos dolorum",
-            icon: "https://picsum.photos/900/902",
-        },
-        {
-            title: "Section 4",
-            content:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate, quibusdam voluptatum, voluptatibus, quos dolorum",
-            icon: "https://picsum.photos/900/903",
-        },
-    ];
 </script>
 
 <svelte:head>
@@ -78,9 +47,6 @@
                 </svg>
             </a>
         </div>
-        {#if demo === true}
-            <Testimonials data={monials} />
-        {/if}
     </main>
 </Layout>
 

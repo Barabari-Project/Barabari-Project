@@ -2,7 +2,6 @@
 // read all files, fetch metata, write back to correct file
 import { join } from 'path';
 import PQueue from 'p-queue';
-import L from 'itarr';
 import urlMetadata from "url-metadata";
 import {
   Cacher, getProgress,

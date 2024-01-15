@@ -1,10 +1,8 @@
 <script>
     import { page } from "$app/stores";
-    import { onMount } from "svelte";
 
     import Nav from "./home/nav.svelte";
     import Landing from "./landing.svelte";
-    import { checkDemo } from "$lib/state";
 
     const social = Object.freeze([
         {
@@ -28,8 +26,6 @@
             href: "https://www.linkedin.com/company/the-barabari-project/",
         },
     ]);
-
-    onMount(checkDemo);
 </script>
 
 <main class="app p-rel flow-x-h">
